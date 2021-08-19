@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0vw;
+  font-family: "Open Sans Condensed", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  background-color: rgb(61, 61, 61);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5rem 0 0 0;
+}
+.glass {
+  background-color: rgb(61, 61, 61);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+}
+h1 {
+  font-size: 7rem;
+  color: white;
+  font-family: "Permanent Marker", cursive;
+}
+h2,
+h3 {
+  color: #ebc465;
+  text-align: center;
+}
+form {
+  margin: 3rem;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.glass form select,
+input[type="submit"] {
+  border-style: none;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 50px;
+  color: white;
+  margin: 1rem;
+  font-size: 1.6rem;
+  flex: 1;
+}
+.glass form input[type="submit"] {
+  background-color: #ebc465;
+}
+.glass form select {
+  background-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  text-align: center;
+}
+.glass form input[type="text"] {
+  height: 3rem;
+  width: 20rem;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  color: white;
+  margin: 1rem;
+  font-size: 1.6rem;
+  padding: 0 0 0 10px;
+  flex: 3;
+}
+p {
+  color: white;
+  font-size: 1.2rem;
+  width: 90vw;
+}
+.quicknav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+img {
+  width: 15vw;
+  max-width: 150px;
+}
+.card {
+  width: 20vw;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  margin: 5rem 0 0 0;
+  max-width: 200px;
+  max-height: 200px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.glass form select,
+.glass input[type="submit"],
+.card,
+.card:hover h2 {
+  transition: 0.3s ease;
+}
+.glass form select:hover,
+.glass input[type="submit"]:hover,
+.card:hover {
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+.card:hover,
+.card:hover h2 {
+  background-color: #ebc465;
+  color: rgb(61, 61, 61);
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 1000px) {
+  .glass h1 {
+    font-size: 3rem;
+  }
+}

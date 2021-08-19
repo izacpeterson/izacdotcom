@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0vw;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+html {
+  /*background-image: url("https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");*/
+  /*background-image: url("https://picsum.photos/1920/1080");*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(105, 205, 230, 1);
+}
+body {
+  text-align: center;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70vh;
+  flex-direction: column;
+  margin: 5rem 0 0 0;
+}
+.glass {
+  width: 50vw;
+  min-width: 350px;
+  min-height: 25vh;
+  margin: 0 0 0 0;
+  background: linear-gradient(
+    to right bottom,
+    rgba(105, 205, 230, 1),
+    rgba(255, 255, 255, 1)
+  );
+  border-radius: 2rem;
+  backdrop-filter: blur(10px) invert(0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+h1 {
+  font-size: 5vw;
+  color: white;
+  margin: 2rem;
+}
+input[type="text"] {
+  font-size: 1.5rem;
+  min-width: 250px;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border: solid rgb(207, 207, 207);
+  border-width: 1px;
+}
+input[type="submit"] {
+  font-size: 1.5rem;
+  min-width: 120px;
+  width: 10vw;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+  border: solid rgb(207, 207, 207);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-width: 1px;
+}
+select {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  min-width: 120px;
+  width: 10vw;
+  border-radius: 10px;
+  margin: 0.5rem;
+  border: solid rgb(207, 207, 207);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-width: 1px;
+}
+form {
+  width: 95%;
+  margin: 2rem;
+}
+.quicknav {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+.card {
+  width: 20vw;
+  height: 20vh;
+  filter: drop-shadow(0 0 0.5rem black);
+  background: linear-gradient(
+    to right bottom,
+    rgba(105, 205, 230, 1),
+    rgba(255, 255, 255, 1)
+  );
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 150px;
+  min-height: 150px;
+  margin: 5rem 0 0 0;
+}
+.card img {
+  width: 5rem;
+  cursor: pointer;
+}
+.card:hover {
+  filter: drop-shadow(0.1rem 0.1rem 0.5rem black);
+}
+.facts {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  color: white;
+  background-color: rgb(30, 184, 255);
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+
+/*Small Stuff like phones*/
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .quicknav {
+    width: 90%;
+  }
+  .facts {
+    display: none;
+  }
+}
