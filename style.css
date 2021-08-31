@@ -1,5 +1,8 @@
 /** @format */
-
+:root {
+  /* --fore_color: rgb(49, 199, 49); */
+  --fore_color: rgb(81, 49, 199);
+}
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +32,7 @@ header {
 }
 
 header h1 {
-  color: rgb(49, 199, 49);
+  color: var(--fore_color);
   font-size: 2rem;
 }
 a {
@@ -43,7 +46,7 @@ a {
   justify-content: space-between;
 }
 a:hover {
-  color: rgb(49, 199, 49);
+  color: var(--fore_color);
 }
 .content {
   width: 100%;
@@ -65,16 +68,16 @@ a:hover {
 }
 em {
   font-style: normal;
-  color: rgb(49, 199, 49);
+  color: var(--fore_color);
   transition: 1s;
 }
 .navBtn {
-  background: rgb(49, 199, 49);
+  background: var(--fore_color);
   font-size: 2rem;
   padding: 0.5rem;
   margin: 2rem;
   border: solid;
-  border-color: rgb(49, 199, 49);
+  border-color: var(--fore_color);
   color: white;
   transition: 0.25s;
   border-radius: 25px 0 25px 0;
@@ -108,7 +111,7 @@ em {
   margin: 1rem;
 }
 .cardBtn:hover {
-  background: rgb(49, 199, 49);
+  background: var(--fore_color);
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -142,7 +145,7 @@ em {
   margin: 1rem;
 }
 .socials a:hover {
-  background: rgb(49, 199, 49);
+  background: var(--fore_color);
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -151,7 +154,7 @@ em {
   flex-wrap: wrap;
   margin: 2rem;
   max-width: 1000px;
-  border: solid rgb(49, 199, 49);
+  border: solid var(--fore_color);
   border-radius: 25px 0 25px 0;
 }
 .about p {
