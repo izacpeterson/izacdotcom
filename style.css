@@ -23,7 +23,9 @@ header {
   padding: 10px;
   z-index: 5;
   background-color: rgb(36, 36, 36);
-  transition: 0.2s;
+  max-width: 50px;
+  overflow: hidden;
+  transition: max-width 0.5s;
 }
 
 header h1 {
@@ -36,6 +38,9 @@ a {
   font-size: 20px;
   margin: 20px 0;
   transition: 0.2s;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
 }
 a:hover {
   color: rgb(49, 199, 49);
@@ -160,4 +165,13 @@ em {
   height: 250px;
   padding: 1rem;
   border-radius: 25px 0 25px 0;
+}
+#name {
+  display: flex;
+  flex-direction: column;
+}
+#C,
+#Z,
+#A {
+  transition: 0.5s;
 }

@@ -13,15 +13,15 @@ getQuote();
 
 $("header").hover(
   function () {
-    $("#home").append("<span id='homeText'> Home</span>");
-    $("#projects").append("<span id='projectText'> Projects</span>");
-    $("#about").append("<span id='aboutText'> About</span>");
-    $("#contact").append("<span id='contactText'> Contact</span>");
+    $("header").css("max-width", "500px");
+    $("#Z").css("transform", "translate(25% , -100%)");
+    $("#A").css("transform", "translate(50% , -200%)");
+    $("#C").css("transform", "translate(75% , -300%)");
   },
   function () {
-    $("#homeText").remove();
-    $("#projectText").remove();
-    $("#aboutText").remove();
-    $("#contactText").remove();
+    $("header").css("max-width", "50px");
+    $("#Z").css("transform", "translate(0)");
+    $("#A").css("transform", "translate(0)");
+    $("#C").css("transform", "translate(0)");
   }
 );
