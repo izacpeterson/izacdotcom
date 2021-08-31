@@ -17,11 +17,13 @@ $("header").hover(
     $("#Z").css("transform", "translate(25% , -100%)");
     $("#A").css("transform", "translate(50% , -200%)");
     $("#C").css("transform", "translate(75% , -300%)");
+    $("#html").css("color", "rgb(48, 48, 48)");
   },
   function () {
     $("header").css("max-width", "50px");
     $("#Z").css("transform", "translate(0)");
     $("#A").css("transform", "translate(0)");
     $("#C").css("transform", "translate(0)");
+    $("#html").css("color", "darkgrey");
   }
 );

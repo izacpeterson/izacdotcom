@@ -10,7 +10,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.1s;
 }
 html {
   background-color: var(--back_color);
@@ -182,4 +181,28 @@ em {
 #Z,
 #A {
   transition: 0.5s;
+}
+#html {
+  margin: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: darkgrey;
+  position: fixed;
+  height: 95vh;
+  transition: 0.5s;
+}
+.head {
+  margin-left: 50px;
+}
+.title {
+  margin-left: 100px;
+}
+.body {
+  margin-left: 50px;
+}
+#filler {
+  flex-grow: 1;
+  height: 100px;
+  width: 100px;
 }
