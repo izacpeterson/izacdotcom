@@ -1,16 +1,20 @@
 /** @format */
 :root {
-  /* --fore_color: rgb(49, 199, 49); */
-  --fore_color: rgb(81, 49, 199);
+  --fore_color: rgb(49, 199, 49);
+  --text_color: white;
+  --back_color: rgb(48, 48, 48);
+  --back_secondary_color: rgb(36, 36, 36);
+  /* --fore_color: rgb(81, 49, 199); */
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.1s;
 }
 html {
-  background-color: rgb(48, 48, 48);
-  color: white;
+  background-color: var(--back_color);
+  color: var(--text_color);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
@@ -19,25 +23,29 @@ body {
   height: 100vh;
 }
 header {
-  color: white;
+  color: var(--text_color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 10px;
   z-index: 5;
-  background-color: rgb(36, 36, 36);
+  background-color: var(--back_secondary_color);
   max-width: 50px;
   overflow: hidden;
   transition: max-width 0.5s;
+  position: absolute;
+  height: 100vh;
 }
-
+header span {
+  margin: 50px 0;
+}
 header h1 {
   color: var(--fore_color);
   font-size: 2rem;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: var(--text_color);
   font-size: 20px;
   margin: 20px 0;
   transition: 0.2s;
@@ -49,9 +57,10 @@ a:hover {
   color: var(--fore_color);
 }
 .content {
-  width: 100%;
+  width: 75vw;
+  margin: auto;
   height: 100%;
-  position: absolute;
+
   left: 0;
   display: flex;
   flex-direction: column;
@@ -78,7 +87,7 @@ em {
   margin: 2rem;
   border: solid;
   border-color: var(--fore_color);
-  color: white;
+  color: var(--text_color);
   transition: 0.25s;
   border-radius: 25px 0 25px 0;
 }
@@ -105,7 +114,7 @@ em {
   justify-content: space-evenly;
   background: none;
   border: solid white;
-  color: white;
+  color: var(--text_color);
   border-radius: 25px 0 25px 0;
   transition: 0.5s;
   margin: 1rem;
@@ -139,7 +148,7 @@ em {
   justify-content: space-evenly;
   background: none;
   border: solid white;
-  color: white;
+  color: var(--text_color);
   border-radius: 25px 0 25px 0;
   transition: 0.5s;
   margin: 1rem;
@@ -149,25 +158,21 @@ em {
   transform: scale(1.1);
   cursor: pointer;
 }
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2rem;
-  max-width: 1000px;
-  border: solid var(--fore_color);
-  border-radius: 25px 0 25px 0;
+#about {
+  flex-direction: row;
 }
-.about p {
-  padding: 1rem;
-}
-.aboutText {
-  width: 500px;
-}
-.about img {
+#about img {
   width: 250px;
   height: 250px;
   padding: 1rem;
   border-radius: 25px 0 25px 0;
+}
+.aboutText {
+  text-align: left;
+}
+.aboutText p {
+  width: 500px;
+  margin: 10px 0;
 }
 #name {
   display: flex;
