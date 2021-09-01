@@ -27,3 +27,15 @@ $("header").hover(
     $("#html").css("color", "darkgrey");
   }
 );
+
+let modalStatus = false;
+function toggleModal() {
+  if (!modalStatus) {
+    $("#pagemask").css("display", "flex");
+    $("#pagemask").toggleClass("fadeIn");
+    modalStatus = true;
+  } else {
+    modalStatus = false;
+    $("#pagemask").css("display", "none");
+  }
+}
