@@ -263,6 +263,10 @@ em {
   animation-name: fadeOut;
   animation-duration: 0.5s;
 }
+canvas {
+  position: fixed;
+  z-index: -10;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
