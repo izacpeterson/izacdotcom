@@ -1,0 +1,44 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/53c6eecb7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Settings</title>
+  </head>
+  <body>
+    <header id="header"></header>
+    <div class="content">
+      <div class="colorChanger panel">
+        <h2>Change Color</h2>
+        <span id="colorBox"></span>
+        <label for="red"
+          >Red: <input type="range" id="red" min="0" max="255" value="49"
+        /></label>
+        <label for="green"
+          >Green: <input type="range" id="green" min="0" max="255" value="199"
+        /></label>
+
+        <label for="blue"
+          >Blue: <input type="range" id="blue" min="0" max="255" value="49"
+        /></label>
+      </div>
+      <div class="darkMode panel">
+        <h2>Dark Mode</h2>
+        <input type="checkbox" id="darkCheck" checked onchange="darkMode()" />
+        <label for="darkCheck"></label>
+      </div>
+    </div>
+  </body>
+  <script src="./js/script.js"></script>
+  <script src="./js/color.js"></script>
+</html>

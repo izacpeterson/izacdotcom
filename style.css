@@ -2,14 +2,15 @@
 :root {
   --fore_color: rgb(49, 199, 49);
   --text_color: white;
-  --back_color: rgb(48, 48, 48);
-  --back_secondary_color: rgb(36, 36, 36);
+  --back_color: #222;
+  --back_secondary_color: #202020;
   /* --fore_color: rgb(81, 49, 199); */
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: color 0.1s, background-color 0.1s;
 }
 html {
   background-color: var(--back_color);
@@ -188,7 +189,7 @@ em {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: darkgrey;
+  color: #5a5a5a;
   position: fixed;
   height: 95vh;
   transition: 0.5s;
@@ -266,6 +267,50 @@ em {
 canvas {
   position: fixed;
   z-index: -10;
+}
+
+.colorChanger label {
+  display: flex;
+  justify-content: space-between;
+}
+#colorBox {
+  background-color: blue;
+  width: 100%;
+  height: 50px;
+}
+.panel {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.darkMode label {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  border: 3px solid var(--text_color);
+  background-color: var(--back_secondary_color);
+  transition: 0.2s;
+}
+.darkMode label::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: var(--text_color);
+  transition: 0.2s;
+  border-radius: 50px;
+}
+#darkCheck:checked ~ label {
+  background-color: var(--fore_color);
+}
+#darkCheck:checked ~ label::after {
+  transform: translateX(100%);
+}
+#darkCheck {
+  visibility: hidden;
+  position: fixed;
 }
 @keyframes fadeIn {
   from {
