@@ -11,22 +11,36 @@ async function getQuote() {
   $(".quote").append("<p><em> -" + jsonResponse.author + "</em>");
 }
 
-$("header").hover(
-  function () {
-    $("header").css("max-width", "500px");
-    $("#Z").css("transform", "translate(25% , -100%)");
-    $("#A").css("transform", "translate(50% , -200%)");
-    $("#C").css("transform", "translate(75% , -300%)");
-    $("#html").css("color", "rgb(48, 48, 48)");
-  },
-  function () {
-    $("header").css("max-width", "50px");
-    $("#Z").css("transform", "translate(0)");
-    $("#A").css("transform", "translate(0)");
-    $("#C").css("transform", "translate(0)");
-    $("#html").css("color", "darkgrey");
+// $("header").hover(
+//   function () {
+//     // $("header").css("max-width", "1000px");
+//     $("#Z").css("transform", "translate(25% , -100%)");
+//     $("#A").css("transform", "translate(50% , -200%)");
+//     $("#C").css("transform", "translate(75% , -300%)");
+//     $("#html").css("color", "rgb(48, 48, 48)");
+//   },
+//   function () {
+//     // $("header").css("max-width", "50px");
+//     $("#Z").css("transform", "translate(0)");
+//     $("#A").css("transform", "translate(0)");
+//     $("#C").css("transform", "translate(0)");
+//     $("#html").css("color", "darkgrey");
+//   }
+// );
+let mobileNavStatus = false;
+
+function toggleMobileNav() {
+  if (!mobileNavStatus) {
+    $("#header").css("left", "0px");
+    $("#header").css("max-width", "100vw");
+
+    mobileNavStatus = true;
+  } else {
+    $("#header").css("left", "-50px");
+    $("#header").css("max-width", "50px");
+    mobileNavStatus = false;
   }
-);
+}
 
 let modalStatus = false;
 function toggleModal() {

@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script
       src="https://kit.fontawesome.com/53c6eecb7e.js"
       crossorigin="anonymous"
@@ -25,10 +25,11 @@
 
       gtag("config", "G-KYFWMY679W");
     </script>
+    <link rel="manifest" href="manifest.json" />
     <title>Izac Peterson</title>
   </head>
   <body>
-    <div id="html">
+    <!-- <div id="html">
       <p class="html">&lt;html&gt;</p>
       <p class="head">&lt;head&gt;</p>
       <p class="title">&lt;title&gt;Izac Peterson&lt;/title&gt;</p>
@@ -37,33 +38,30 @@
       <span id="filler"></span>
       <p class="body">&lt;/body&gt;</p>
       <p class="html">&lt;/html&gt;</p>
-    </div>
+    </div> -->
     <header id="header"></header>
-    <div class="content">
-      <span id="intro">
-        Hello, I'm<em> Izac.</em> <br />
-        I'm a web developer who makes cool stuff
-      </span>
-      <form action="./projects.html">
-        <button class="navBtn">My Projects</button>
-      </form>
-      <h2>Random Quote</h2>
-      <div class="quote"></div>
-    </div>
-    <div id="pagemask" class="pagemask">
-      <div class="modal">
-        <i class="far fa-file-code"></i>
-        <h1>Who made this website?</h1>
-        <p>I did. 100% built by me.</p>
+    <nav id="mobileNav">
+      <button onclick="toggleMobileNav()"><i class="fas fa-bars"></i></button>
+    </nav>
+    <div class="container">
+      <div class="content">
+        <span id="intro">
+          Hello, I'm<em> Izac.</em> <br />
+          I'm a web developer who makes cool stuff
+        </span>
         <form action="./projects.html">
-          <button class="navBtn">See the projects</button>
+          <button class="navBtn">My Projects</button>
         </form>
-        <p id="closeModal" onclick="toggleModal()">Close this popup</p>
+      </div>
+      <div class="quoteBlock">
+        <h2>Random Quote</h2>
+        <div class="quote"></div>
       </div>
     </div>
-    <button id="modalButton" onclick="toggleModal()">?</button>
-    <canvas id="canvas"></canvas>
+    <!-- <button id="modalButton" onclick="toggleModal()">?</button> -->
+    <!-- <canvas id="canvas"></canvas> -->
   </body>
   <script src="./js/script.js"></script>
-  <script src="./js/lines.js"></script>
+  <script src="./workerinit.js"></script>
+  <!-- <script src="./js/lines.js"></script> -->
 </html>

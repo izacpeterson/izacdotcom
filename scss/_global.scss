@@ -1,0 +1,20 @@
+/** @format */
+$fore_color: rgb(49, 199, 49);
+$text_color: white;
+$back_color: #222;
+$back_secondary_color: #202020;
+
+%buttonStyle {
+  background-color: $fore_color;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 2rem;
+  color: $text_color;
+  transition: 0.25s;
+  border-radius: 25px 0 25px 0;
+  border: none;
+  &:hover {
+    border-radius: 0 25px 0 25px;
+    cursor: pointer;
+  }
+}
