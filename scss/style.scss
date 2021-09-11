@@ -2,6 +2,7 @@
 
 @import "global";
 @import "modal";
+@import "header";
 * {
   margin: 0;
   padding: 0;
@@ -12,85 +13,75 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: $text_color;
 }
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-  background-color: $back_secondary_color;
-  max-width: 50px;
-  overflow: hidden;
-  transition: all 0.5s;
-  position: absolute;
-  height: 100vh;
-  z-index: 1;
-  span {
-    margin: 50px 0;
-    transition: all 0.5s;
-  }
-  #name {
-    display: flex;
-    flex-direction: column;
-  }
-  h1 {
-    color: $fore_color;
-  }
-  a {
-    text-decoration: none;
-    color: $text_color;
-    font-size: 20px;
-    margin: 20px 0;
-    transition: 0.2s;
-    display: flex;
-    width: 150px;
-    justify-content: space-between;
-    &:hover {
-      color: $fore_color;
-    }
-  }
-  &:hover {
-    max-width: 100vw;
-  }
-}
 
 .container {
   height: 100%;
-  padding: 100px 10px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
   button {
     @extend %buttonStyle;
   }
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 30px;
-    text-align: center;
-  }
+
   .quoteBlock {
     text-align: center;
+    width: 50%;
   }
 }
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+}
+
 #mobileNav {
   visibility: hidden;
   background-color: $fore_color;
   z-index: 2;
-  position: fixed;
   width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
   button {
-    font-size: 20px;
-    padding: 10px;
-    margin: 10px;
-    background-color: $back_secondary_color;
-    border: none;
-    color: $fore_color;
+    @extend %navButton;
   }
 }
 .showHeader {
   width: 100%;
   left: 0;
+}
+.projectCard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cardBtn {
+  @extend %cardButton;
+}
+
+footer {
+  background-color: $fore_color;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  button {
+    @extend %navButton;
+  }
+}
+em {
+  font-style: normal;
+  color: $fore_color;
 }
 
 //   Media Query
@@ -117,10 +108,13 @@ header {
     visibility: hidden;
   }
   #modalButton {
-    display: none;
   }
   #mobileNav {
     visibility: visible;
     z-index: 2;
+  }
+  .cardBtn {
+    width: 40vw;
+    height: 50vw;
   }
 }

@@ -3,6 +3,13 @@
 // Perform install steps
 let CACHE_NAME = "my-cache";
 let urlsToCache = [
+  "index.html",
+  "projects.html",
+  "settings.html",
+  "contact.html",
+  "about.html",
+  "/common/header.html",
+  "/common/modal.html",
   "/css/style.css",
   "/img/ip192.png",
   "/js/script.js",

@@ -1,5 +1,6 @@
 /** @format */
 $("#header").load("./common/header.html");
+$("#modalBox").load("./common/modal.html");
 
 getQuote();
 async function getQuote() {
@@ -45,11 +46,16 @@ function toggleMobileNav() {
 let modalStatus = false;
 function toggleModal() {
   if (!modalStatus) {
-    $("#pagemask").css("display", "flex");
-    $("#pagemask").toggleClass("fadeIn");
+    $(".pagemask").css("visibility", "visible");
     modalStatus = true;
+    setTimeout(() => {
+      $(".pagemask").css("opacity", "1");
+    }, 100);
   } else {
     modalStatus = false;
-    $("#pagemask").css("display", "none");
+    $(".pagemask").css("visibility", "hidden");
+    setTimeout(() => {
+      $(".pagemask").css("opacity", "0");
+    }, 100);
   }
 }
