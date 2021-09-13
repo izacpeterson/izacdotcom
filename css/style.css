@@ -18,7 +18,7 @@ footer button, #mobileNav button {
   font-size: 20px;
   padding: 10px;
   width: 40px;
-  background-color: #202020;
+  background-color: #111;
   border: none;
   color: #31c731;
 }
@@ -74,7 +74,7 @@ header {
   flex-direction: column;
   justify-content: center;
   padding: 10px;
-  background-color: #202020;
+  background-color: #111;
   max-width: 50px;
   overflow: hidden;
   transition: all 0.5s;
@@ -117,13 +117,12 @@ header:hover {
 }
 
 body {
-  background-color: #222;
+  background-color: #202020;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
 
 .container {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -142,19 +141,26 @@ body {
   align-items: center;
   font-size: 30px;
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 75%;
+  margin: auto;
 }
 
 #mobileNav {
-  visibility: hidden;
   background-color: #31c731;
   z-index: 2;
   width: 100%;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
+#mobileNav button {
+  visibility: hidden;
+}
+
 .showHeader {
   width: 100%;
   left: 0;
@@ -169,19 +175,31 @@ body {
 
 footer {
   background-color: #31c731;
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
   padding: 5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  z-index: 2;
 }
 em {
   font-style: normal;
   color: #31c731;
 }
 
+.aboutText {
+  text-align: left;
+  text-indent: 50px;
+  width: 75%;
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 600px) {
+  .content {
+    width: 90%;
+  }
+
   #header {
     left: -50px;
     width: 100vw;
@@ -208,6 +226,9 @@ em {
   #mobileNav {
     visibility: visible;
     z-index: 2;
+  }
+  #mobileNav button {
+    visibility: visible;
   }
 
   .cardBtn {

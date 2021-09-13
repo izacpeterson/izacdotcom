@@ -1,6 +1,7 @@
 /** @format */
 $("#header").load("./common/header.html");
 $("#modalBox").load("./common/modal.html");
+$("#footer").load("./common/footer.html");
 
 getQuote();
 async function getQuote() {

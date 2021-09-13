@@ -1,7 +1,7 @@
 {
   "name": "Izac Peterson Portfolio",
   "short_name": "Izac",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#31c731",
   "theme_color": "#31c731",
   "start_url": "/",
