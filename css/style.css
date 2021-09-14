@@ -1,0 +1,83 @@
+/** @format */
+/** @format */
+.leafButton {
+  color: white;
+  background-color: #31c731;
+  border: none;
+  font-size: 26px;
+  padding: 10px;
+  border-radius: 20px 0 20px 0;
+  transition: 0.2s;
+}
+.leafButton:hover {
+  border-radius: 0 20px 0 20px;
+  cursor: pointer;
+}
+
+/** @format */
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  padding: 10px;
+  background-color: #111;
+  max-width: 60px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.navLink {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  font-size: 31px;
+}
+.navLink:hover {
+  color: #31c731;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202020;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.greenText {
+  color: #31c731;
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #31c731;
+  border-radius: 20px 0 20px 0;
+  transition: 0.2s;
+}
+.card img {
+  width: 200px;
+}
+.card:hover {
+  border-radius: 0 20px 0 20px;
+  background-color: #31c731;
+}
+
+/*# sourceMappingURL=style.css.map */

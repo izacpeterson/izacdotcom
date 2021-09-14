@@ -1,0 +1,43 @@
+/** @format */
+
+@import "global";
+@import "nav";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $colBackground;
+  color: $colText;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: $fontSize;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+.greenText {
+  color: $colPrimary;
+}
+.leafButton {
+  @extend %leafButton;
+}
+.card {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid $colPrimary;
+  border-radius: $borderRadius 0 $borderRadius 0;
+  transition: 0.2s;
+  img {
+    width: 200px;
+  }
+  &:hover {
+    border-radius: 0 $borderRadius 0 $borderRadius;
+    background-color: $colPrimary;
+  }
+}

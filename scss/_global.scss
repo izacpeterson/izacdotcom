@@ -1,0 +1,21 @@
+/** @format */
+$colPrimary: rgb(49, 199, 49);
+$colText: white;
+$colBackground: #202020;
+$colBackgroundSecondary: #111;
+$fontSize: 16px;
+$borderRadius: 20px;
+
+%leafButton {
+  color: $colText;
+  background-color: $colPrimary;
+  border: none;
+  font-size: $fontSize + 10;
+  padding: 10px;
+  border-radius: $borderRadius 0 $borderRadius 0;
+  transition: 0.2s;
+  &:hover {
+    border-radius: 0 $borderRadius 0 $borderRadius;
+    cursor: pointer;
+  }
+}
