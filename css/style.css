@@ -14,8 +14,12 @@
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 /** @format */
-nav {
+#sideNav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,8 +30,9 @@ nav {
   max-width: 60px;
   overflow: hidden;
   transition: 0.2s;
+  z-index: 5;
 }
-nav a {
+#sideNav a {
   margin: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -36,9 +41,12 @@ nav a {
   text-decoration: none;
   color: white;
 }
-nav a:hover {
+#sideNav a:hover {
   color: #31c731;
   cursor: pointer;
+}
+#sideNav:hover {
+  box-shadow: 0 0 500px #000;
 }
 
 /** @format */
@@ -51,10 +59,28 @@ html.is-animating .transition-fade {
   opacity: 0;
 }
 
+.transition-slide {
+  transition: 0.4s;
+  transform: translateY(0);
+}
+
+html.is-animating .transition-slide {
+  transform: translateY(1000px);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 100;
 }
 
 body {
@@ -67,28 +93,108 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   transition: opacity 0.2s;
+  width: 100%;
+  min-height: 500px;
+  padding: 50px;
 }
 
 .greenText {
   color: #31c731;
 }
 
-.card {
+.cardLink {
   padding: 20px;
+}
+
+.card {
   text-align: center;
-  border: 2px solid #31c731;
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #111;
   transition: 0.2s;
+  width: 200px;
+  overflow: hidden;
 }
 .card img {
-  width: 200px;
+  padding: 20px;
+  width: 100%;
+}
+.card h2 {
+  background-color: #31c731;
+  color: white;
 }
 .card:hover {
-  border-radius: 0 20px 0 20px;
   background-color: #31c731;
+}
+
+#projectList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#projectType input[type=checkbox] {
+  visibility: hidden;
+}
+#projectType input[type=checkbox]:checked + label {
+  color: #31c731;
+}
+#projectType input[type=checkbox]:hover + label {
+  cursor: pointer;
+}
+
+.about {
+  display: flex;
+}
+.about p {
+  text-align: left;
+  max-width: 500px;
+  text-indent: 30px;
+}
+
+#mobileHeader {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .leafButton {
+    font-size: 48px;
+  }
+
+  #sideNav {
+    left: -60px;
+  }
+  #sideNav a {
+    width: 100%;
+  }
+
+  #mobileHeader {
+    display: flex;
+    background-color: #31c731;
+    padding: 10px;
+  }
+  #mobileHeader button {
+    color: white;
+    background-color: #202020;
+    border: none;
+    font-size: 32px;
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

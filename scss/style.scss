@@ -8,6 +8,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+h1 {
+  font-size: $fontSize * 5;
+}
+h2 {
+  font-size: $fontSize * 2;
+  font-weight: 100;
+}
 body {
   background-color: $colBackground;
   color: $colText;
@@ -17,9 +24,12 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   transition: opacity 0.2s;
+  width: 100%;
+  min-height: 500px;
+  padding: 50px;
 }
 .greenText {
   color: $colPrimary;
@@ -27,17 +37,88 @@ main {
 .leafButton {
   @extend %leafButton;
 }
-.card {
+.cardLink {
   padding: 20px;
+}
+.card {
   text-align: center;
-  border: 2px solid $colPrimary;
-  border-radius: $borderRadius 0 $borderRadius 0;
+  border-radius: $borderRadius;
+  text-decoration: none;
+  color: white;
+  background-color: $colBackgroundSecondary;
   transition: 0.2s;
+  width: 200px;
+  overflow: hidden;
+
   img {
-    width: 200px;
+    padding: 20px;
+    width: 100%;
+  }
+  h2 {
+    background-color: $colPrimary;
+    color: $colText;
   }
   &:hover {
-    border-radius: 0 $borderRadius 0 $borderRadius;
     background-color: $colPrimary;
+  }
+}
+#projectList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#projectType {
+  input[type="checkbox"] {
+    visibility: hidden;
+    &:checked + label {
+      color: $colPrimary;
+    }
+    &:hover + label {
+      cursor: pointer;
+    }
+  }
+}
+.about {
+  display: flex;
+  p {
+    text-align: left;
+    max-width: 500px;
+    text-indent: 30px;
+  }
+}
+#mobileHeader {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: $fontSize * 3;
+    text-align: center;
+  }
+  h2 {
+    font-size: $fontSize * 2;
+    text-align: center;
+  }
+  .leafButton {
+    font-size: $fontSize * 3;
+  }
+  #sideNav {
+    left: -60px;
+    a {
+      width: 100%;
+    }
+  }
+  #mobileHeader {
+    display: flex;
+    background-color: $colPrimary;
+    padding: 10px;
+    button {
+      color: $colText;
+      background-color: $colBackground;
+      border: none;
+      font-size: $fontSize * 2;
+      padding: 10px;
+    }
   }
 }

@@ -20,11 +20,28 @@
   </head>
   <body>
     <header id="header"></header>
-    <nav id="nav"></nav>
-    <main id="swup" class="transition-fade">
+    <header id="mobileHeader">
+      <button><i class="fas fa-bars"></i></button>
+    </header>
+    <nav id="sideNav"></nav>
+    <main id="swup-" class="transition-fade">
       <h1>Projects</h1>
+      <nav id="projectType">
+        <input type="checkbox" name="" id="showAll" />
+        <label for="showAll">All</label>
+        <input type="checkbox" name="" id="showJs" />
+        <label for="showJs">Javascript</label>
+        <input type="checkbox" name="" id="showCss" />
+        <label for="showCss">CSS</label>
+        <input type="checkbox" name="" id="showSass" />
+        <label for="showSass">SASS</label>
+        <input type="checkbox" name="" id="showBs" />
+        <label for="showBs">BootStrap</label>
+      </nav>
+      <div id="projectList"></div>
     </main>
     <footer id="footer"></footer>
   </body>
   <script src="./js/nav.js"></script>
+  <script defer src="./js/projects.js"></script>
 </html>
