@@ -27,17 +27,28 @@ nav {
   overflow: hidden;
   transition: 0.2s;
 }
-
-.navLink {
+nav a {
   margin: 20px 0;
   display: flex;
   justify-content: space-between;
   width: 200px;
   font-size: 31px;
+  text-decoration: none;
+  color: white;
 }
-.navLink:hover {
+nav a:hover {
   color: #31c731;
   cursor: pointer;
+}
+
+/** @format */
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
 }
 
 * {

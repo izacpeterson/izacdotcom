@@ -10,15 +10,17 @@ nav {
   max-width: 60px;
   overflow: hidden;
   transition: 0.2s;
-}
-.navLink {
-  margin: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
-  font-size: $fontSize + 15;
-  &:hover {
-    color: $colPrimary;
-    cursor: pointer;
+  a {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    font-size: $fontSize + 15;
+    text-decoration: none;
+    color: $colText;
+    &:hover {
+      color: $colPrimary;
+      cursor: pointer;
+    }
   }
 }

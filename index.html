@@ -11,16 +11,24 @@
       src="https://kit.fontawesome.com/53c6eecb7e.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script defer src="./js/transitions.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>Izac Peterson</title>
   </head>
   <body>
     <header id="header"></header>
     <nav id="nav"></nav>
-    <main id="main"></main>
+    <main id="swup" class="transition-fade">
+      <h1>Hello! I'm <span class="greenText">Izac</span></h1>
+      <p>I'm a web developer who makes cool websites</p>
+
+      <a href="/projects.html"
+        ><button class="leafButton">My Projects</button></a
+      >
+    </main>
     <footer id="footer"></footer>
   </body>
-  <script src="./js/pages.js"></script>
   <script src="./js/nav.js"></script>
-  <script src="./js/projects.js"></script>
 </html>

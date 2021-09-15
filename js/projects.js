@@ -1,11 +1,11 @@
 /** @format */
 function addProject(name, img) {
-  $(".projectList").append(` 
-<div class="card">
-    <img src=${img} alt="" />
-    <h2>${name}</h2>
-</div>
+  $("#projectList").append(` 
+<h1>test</h1>
   `);
-  console.log("added");
+  console.log($(`#projectList`));
 }
 addProject("Homepage", ".");
+
+let projects = [];
+projects.push({ name: "proj 1", img: "." });
