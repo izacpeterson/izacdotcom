@@ -10,6 +10,7 @@
 }
 h1 {
   font-size: $fontSize * 5;
+  font-weight: 100;
 }
 h2 {
   font-size: $fontSize * 2;
@@ -20,6 +21,7 @@ body {
   color: $colText;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: $fontSize;
+  overflow: hidden;
 }
 main {
   display: flex;
@@ -49,7 +51,7 @@ main {
   transition: 0.2s;
   width: 200px;
   overflow: hidden;
-
+  box-shadow: 0 0 5px #111;
   img {
     padding: 20px;
     width: 100%;
@@ -92,12 +94,18 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    overflow: visible;
+  }
+  main {
+    padding: 5px;
+  }
   h1 {
     font-size: $fontSize * 3;
     text-align: center;
   }
   h2 {
-    font-size: $fontSize * 2;
+    font-size: $fontSize * 1.5;
     text-align: center;
   }
   .leafButton {
@@ -113,12 +121,32 @@ main {
     display: flex;
     background-color: $colPrimary;
     padding: 10px;
+    box-shadow: 0 0 5px #111;
+
     button {
       color: $colText;
       background-color: $colBackground;
       border: none;
-      font-size: $fontSize * 2;
-      padding: 10px;
+      font-size: $fontSize * 1.5;
+      padding: 5px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .cardLink {
+    padding: 5px;
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    h2 {
+      background: none;
+    }
+    img {
+      width: 20%;
+      padding: 5px;
     }
   }
 }

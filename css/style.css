@@ -26,11 +26,12 @@ a {
   position: absolute;
   height: 100%;
   padding: 10px;
-  background-color: #111;
+  background-color: #303030;
   max-width: 60px;
   overflow: hidden;
-  transition: 0.2s;
+  transition: 0.5s;
   z-index: 5;
+  box-shadow: 0 0 5px #111;
 }
 #sideNav a {
   margin: 20px 0;
@@ -46,28 +47,10 @@ a {
   cursor: pointer;
 }
 #sideNav:hover {
-  box-shadow: 0 0 500px #000;
+  box-shadow: 0 0 50px #111;
 }
 
 /** @format */
-.transition-fade {
-  transition: 0.4s;
-  opacity: 1;
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
-}
-
-.transition-slide {
-  transition: 0.4s;
-  transform: translateY(0);
-}
-
-html.is-animating .transition-slide {
-  transform: translateY(1000px);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -76,6 +59,7 @@ html.is-animating .transition-slide {
 
 h1 {
   font-size: 80px;
+  font-weight: 100;
 }
 
 h2 {
@@ -84,10 +68,11 @@ h2 {
 }
 
 body {
-  background-color: #202020;
+  background-color: #222;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
+  overflow: hidden;
 }
 
 main {
@@ -114,10 +99,11 @@ main {
   border-radius: 20px;
   text-decoration: none;
   color: white;
-  background-color: #111;
+  background-color: #303030;
   transition: 0.2s;
   width: 200px;
   overflow: hidden;
+  box-shadow: 0 0 5px #111;
 }
 .card img {
   padding: 20px;
@@ -162,13 +148,21 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    overflow: visible;
+  }
+
+  main {
+    padding: 5px;
+  }
+
   h1 {
     font-size: 48px;
     text-align: center;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
   }
 
@@ -187,13 +181,34 @@ main {
     display: flex;
     background-color: #31c731;
     padding: 10px;
+    box-shadow: 0 0 5px #111;
   }
   #mobileHeader button {
     color: white;
-    background-color: #202020;
+    background-color: #222;
     border: none;
-    font-size: 32px;
-    padding: 10px;
+    font-size: 24px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .cardLink {
+    padding: 5px;
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .card h2 {
+    background: none;
+  }
+  .card img {
+    width: 20%;
+    padding: 5px;
   }
 }
 

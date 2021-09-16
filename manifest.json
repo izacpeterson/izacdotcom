@@ -3,7 +3,7 @@
   "short_name": "Izac",
   "display": "fullscreen",
   "background_color": "#31c731",
-  "theme_color": "#31c731",
+  "theme_color": "#29a329",
   "start_url": "/",
   "prefer_related_applications": true,
   "icons": [
