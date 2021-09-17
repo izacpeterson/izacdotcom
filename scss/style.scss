@@ -88,6 +88,8 @@ main.projects {
 }
 .about {
   display: flex;
+  flex-direction: column;
+  padding: 0 150px;
   p {
     text-align: left;
     max-width: 500px;
@@ -162,7 +164,9 @@ main.projects {
     background-color: $colPrimary;
     padding: 10px;
     box-shadow: 0 0 5px #111;
-
+    position: sticky;
+    top: 0;
+    z-index: 5;
     button {
       color: $colText;
       background-color: $colBackground;

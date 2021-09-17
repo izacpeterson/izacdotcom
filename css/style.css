@@ -27,11 +27,11 @@ a {
   position: absolute;
   height: 100%;
   padding: 10px;
-  background-color: #303030;
+  background-color: #333;
   max-width: 60px;
   overflow: hidden;
   transition: 0.5s;
-  z-index: 5;
+  z-index: 4;
   box-shadow: 0 0 5px #111;
 }
 #sideNav a {
@@ -104,7 +104,7 @@ main.projects {
   border-radius: 20px;
   text-decoration: none;
   color: white;
-  background-color: #303030;
+  background-color: #2a2a2a;
   transition: 0.2s;
   width: 200px;
   overflow: hidden;
@@ -141,6 +141,8 @@ main.projects {
 
 .about {
   display: flex;
+  flex-direction: column;
+  padding: 0 150px;
 }
 .about p {
   text-align: left;
@@ -223,6 +225,9 @@ main.projects {
     background-color: #31c731;
     padding: 10px;
     box-shadow: 0 0 5px #111;
+    position: sticky;
+    top: 0;
+    z-index: 5;
   }
   #mobileHeader button {
     color: white;
