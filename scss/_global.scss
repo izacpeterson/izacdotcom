@@ -8,8 +8,9 @@ $borderRadius: 20px;
 
 %leafButton {
   color: $colText;
-  background-color: $colPrimary;
-  border: none;
+  // background-color: $colPrimary;
+  background: none;
+  border: 2px solid $colPrimary;
   font-size: $fontSize + 10;
   padding: 10px;
   border-radius: $borderRadius 0 $borderRadius 0;
@@ -17,6 +18,7 @@ $borderRadius: 20px;
   &:hover {
     border-radius: 0 $borderRadius 0 $borderRadius;
     cursor: pointer;
+    background-color: $colPrimary;
   }
 }
 a {

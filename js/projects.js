@@ -1,4 +1,5 @@
 /** @format */
+
 function addProject(name, img, url) {
   $("#projectList").append(` 
 <a href=${url} class="cardLink">
@@ -53,6 +54,6 @@ projects.push({
 
 //image.flaticon.com/icons/png/512/850/850960.png
 
-https: projects.forEach((i) => {
+projects.forEach((i) => {
   addProject(i.name, i.img, i.url);
 });

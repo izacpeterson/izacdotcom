@@ -2,8 +2,8 @@
 /** @format */
 .leafButton {
   color: white;
-  background-color: #31c731;
-  border: none;
+  background: none;
+  border: 2px solid #31c731;
   font-size: 26px;
   padding: 10px;
   border-radius: 20px 0 20px 0;
@@ -12,6 +12,7 @@
 .leafButton:hover {
   border-radius: 0 20px 0 20px;
   cursor: pointer;
+  background-color: #31c731;
 }
 
 a {
@@ -50,11 +51,11 @@ a {
   box-shadow: 0 0 50px #111;
 }
 
-/** @format */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
 }
 
 h1 {
@@ -70,20 +71,24 @@ h2 {
 body {
   background-color: #222;
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
-  overflow: hidden;
+  height: 100vh;
 }
 
 main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   transition: opacity 0.2s;
   width: 100%;
-  min-height: 500px;
-  padding: 50px;
+  height: 100%;
+  padding: 0 250px;
+}
+
+main.projects {
+  align-items: center;
+  padding: 10px;
 }
 
 .greenText {
@@ -147,6 +152,24 @@ main {
   display: none;
 }
 
+.logo {
+  font-size: 200px;
+  position: absolute;
+  right: 10%;
+  top: 0;
+  color: #31c731;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.quote {
+  bottom: 20%;
+  width: 500px;
+  text-align: center;
+  font-style: italic;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     overflow: visible;
@@ -154,11 +177,28 @@ main {
 
   main {
     padding: 5px;
+    align-items: center;
+  }
+  main .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .quote {
+    width: 90%;
+  }
+
+  .logo {
+    visibility: hidden;
   }
 
   h1 {
-    font-size: 48px;
+    font-size: 32px;
     text-align: center;
+  }
+
+  h1.greenText {
+    font-size: 64px;
   }
 
   h2 {
@@ -167,7 +207,8 @@ main {
   }
 
   .leafButton {
-    font-size: 48px;
+    font-size: 32px;
+    margin: 20px;
   }
 
   #sideNav {
