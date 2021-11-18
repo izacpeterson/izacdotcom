@@ -1,52 +1,35 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/53c6eecb7e.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="manifest" href="/manifest.json" />
-    <script defer src="/js/projects.js"></script>
-    <script defer src="./js/quote.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./app.js"></script>
     <title>Izac Peterson</title>
   </head>
   <body>
-    <header id="header"></header>
-    <header id="mobileHeader">
-      <button><i class="fas fa-bars"></i></button>
-    </header>
-    <nav id="sideNav"></nav>
-    <main>
-      <div class="intro">
-        <h1>Hello! I'm <span class="greenText">Izac</span></h1>
-        <h2>I'm a web developer who makes cool stuff</h2>
-        <div class="buttons">
-          <a href="/projects.html"
-            ><button class="leafButton">My Projects</button></a
-          >
-          <a href="/contact.html"
-            ><button class="leafButton">Contact Me</button></a
-          >
-        </div>
-      </div>
-      <span class="logo">{ip}</span>
-      <div class="quote"></div>
-    </main>
-    <footer id="footer"></footer>
+    <nav>
+      <!-- <img src="./img/logo_transparent.png" alt="" /> -->
+      <button onClick="document.getElementById('main').scrollIntoView();">Home</button>
+      <button onClick="document.getElementById('projects').scrollIntoView();">Projects</button>
+      <button onClick="document.getElementById('about').scrollIntoView();">About Me</button>
+      <button onClick="document.getElementById('contact').scrollIntoView();">Contact</button>
+    </nav>
+    <section id="main">
+      <h1>IZAC PETERSON</h1>
+      <span>Welcome to my Portfolio</span>
+      <button class="homeBtn" onClick="document.getElementById('projects').scrollIntoView();">See My Projects</button>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul id="projectList"></ul>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+    </section>
   </body>
-  <script src="./js/nav.js"></script>
-  <script src="./workerinit.js"></script>
 </html>
