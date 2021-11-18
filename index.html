@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="./style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
@@ -21,34 +22,34 @@
 
       gtag("config", "G-KYFWMY679W");
     </script>
+=======
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./app.js"></script>
+>>>>>>> dev
     <title>Izac Peterson</title>
   </head>
   <body>
-    <header>
-      <ul class="navList">
-        <li id="headIzac">Izac Peterson</li>
-        <li><a href="./">Home</a></li>
-        <li><a href="./projects.html">Projects</a></li>
-        <li><a href="./about.html">About Me</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </header>
-    <div class="intro">
-      <p>
-        Hello, I'm<em> Izac.</em> <br />
-        I'm a web developer who makes cool stuff
-      </p>
-      <div class="buttonList">
-        <form action="./projects.html">
-          <button class="navBtn">My Projects</button>
-        </form>
-      </div>
-    </div>
-    <footer>
-      <h2>Random Quote</h2>
-      <div class="quote"></div>
-    </footer>
+    <nav>
+      <!-- <img src="./img/logo_transparent.png" alt="" /> -->
+      <button onClick="document.getElementById('main').scrollIntoView();">Home</button>
+      <button onClick="document.getElementById('projects').scrollIntoView();">Projects</button>
+      <button onClick="document.getElementById('about').scrollIntoView();">About Me</button>
+      <button onClick="document.getElementById('contact').scrollIntoView();">Contact</button>
+    </nav>
+    <section id="main">
+      <h1>IZAC PETERSON</h1>
+      <span>Welcome to my Portfolio</span>
+      <button class="homeBtn" onClick="document.getElementById('projects').scrollIntoView();">See My Projects</button>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul id="projectList"></ul>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+    </section>
   </body>
-  <script src="./script.js"></script>
-  <script src="./discord.js"></script>
 </html>
