@@ -18,22 +18,30 @@ html {
 nav {
   position: fixed;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
+  height: 100%;
+  width: 150px;
   background-color: #272727;
   box-shadow: 0 0 10px #1a1a1a;
   padding: 1rem;
 }
 nav button {
-  background: none;
+  margin-bottom: 50px;
+  background: #333333;
   color: #39b54a;
   border: none;
   font-size: 1.5rem;
+  width: 75px;
+  height: 75px;
+  transition: 0.2s;
+  border-radius: 100%;
 }
 nav button:hover {
   cursor: pointer;
-  transform: scale(1.02);
+  border-radius: 35%;
+  background-color: #39b54a;
+  color: #333333;
 }
 nav img {
   width: 5rem;
@@ -45,8 +53,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   text-align: center;
+  padding: 150px;
 }
 
 h1 {
@@ -63,6 +71,8 @@ h1 {
   padding: 1rem;
   font-weight: 200;
   transition: 0.1s;
+  font-weight: 400;
+  border-radius: 10px;
 }
 .homeBtn:hover {
   cursor: pointer;
@@ -85,9 +95,6 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-.project img {
-  width: 150px;
 }
 
 @media only screen and (max-width: 600px) {

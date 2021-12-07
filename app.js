@@ -9,10 +9,10 @@ class Project {
   }
   render() {
     projectList.innerHTML += `
-    <li class="project">
-        <a href="${this.url}">
+    <li class="project homeBtn">
+        <a href="${this.url}" target="_blank">
             <h3>${this.name}</h3>
-            <img src="${this.img}" />
+            <!--<img src="${this.img}" />-->
         </a>
     </li>`;
   }
