@@ -12,17 +12,22 @@
     <title>Izac Peterson</title>
   </head>
   <body>
-    <nav>
-      <!-- <img src="./img/logo_transparent.png" alt="" /> -->
-      <button onClick="document.getElementById('main').scrollIntoView();"><i class="fas fa-home"></i></button>
-      <button onClick="document.getElementById('projects').scrollIntoView();"><i class="fas fa-project-diagram"></i></button>
-      <button onClick="document.getElementById('about').scrollIntoView();"><i class="fas fa-question"></i></button>
-      <button onClick="document.getElementById('contact').scrollIntoView();"><i class="fas fa-address-book"></i></button>
-    </nav>
+    <header>
+      <img src="./img/logo_transparent.png" alt="" />
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">About Me</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </header>
     <section id="main">
-      <h1>IZAC PETERSON</h1>
-      <span>Welcome to my Portfolio</span>
+      <div class="intro">
+        <h1>Hello, I'm <em>Izac</em></h1>
+        <h2>I'm a web developer who makes cool stuff</h2>
+      </div>
       <button class="homeBtn" onClick="document.getElementById('projects').scrollIntoView();">See My Projects</button>
+      <div class="quote">"I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past, I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain."<em>-Litany against fear</em></div>
     </section>
     <section id="projects">
       <h2>Projects</h2>

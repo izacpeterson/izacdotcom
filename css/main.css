@@ -1,0 +1,22 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homeBtn {
+  background-color: #39b54a;
+  color: #eee;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  margin: 40px;
+}
+.homeBtn:hover {
+  box-shadow: inset 0 0 100px grey;
+  cursor: pointer;
+}
+.quote {
+  width: 50%;
+  margin-top: 100px;
+  font-style: italic;
+}

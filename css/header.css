@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #222;
+  /* position: sticky; */
+  top: 0;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding: 10px;
+}
+img {
+  width: 100px;
+}
+a {
+  text-decoration: none;
+  color: #39b54a;
+}

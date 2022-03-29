@@ -1,0 +1,21 @@
+#projects {
+  padding: 100px;
+  /* background-color: cornflowerblue; */
+}
+.project {
+  margin: 20px;
+}
+#projectList {
+  display: flex;
+  flex-direction: column;
+}
+.project li {
+  color: #39b54a;
+}
+h3 {
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+h4 {
+  padding-top: 20px;
+}
