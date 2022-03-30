@@ -4,10 +4,14 @@
 }
 .project {
   margin: 20px;
+  transition: 0.2s;
+}
+.project:hover {
+  box-shadow: 0 0 50px rgb(26, 26, 26);
 }
 #projectList {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 .project li {
   color: #39b54a;

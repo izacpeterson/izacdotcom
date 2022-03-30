@@ -1,7 +1,8 @@
 const projectList = [
-  { name: "Solar System", url: "url", desc: "A visual representation of our solar system", skills: ["HTML Canvas", "Javascript"] },
-  { name: "DevFlix", url: "url", desc: "An app to browse, save, and share your favorite movies", skills: ["Javascript", "HTML", "SASS", "Firebase"] },
-  { name: "Color Palettes", url: "url", desc: "Create and share color palettes", skills: ["ReactJS", "Semantic UI", "Firebase"] },
+  { name: "Solar System", url: "https://izacpeterson.github.io/solSystem/", desc: "A realtime visual representation of our solar system", skills: ["HTML Canvas", "Javascript"] },
+  { name: "DevFlix", url: "https://devflix.io/", desc: "An app to browse, save, and share your favorite movies", skills: ["Javascript", "HTML", "SASS", "Firebase"] },
+  { name: "Color Palettes", url: "https://color.izacpeterson.com/", desc: "Create and share color palettes", skills: ["ReactJS", "Semantic UI", "Firebase"] },
+  { name: "CryptoChat", url: "https://izac-crypto-chat.herokuapp.com/", desc: "A simple and secure chat app", skills: ["NodeJS", "Vue", "SQLite"] },
 ];
 class Project {
   constructor(name, url, desc, skills) {
@@ -13,7 +14,7 @@ class Project {
   render() {
     document.querySelector("#projectList").innerHTML += `
       <div class="project">
-        <h3>${this.name}</h3>
+        <h3><a href="${this.url}" target="_blank">${this.name}</a></h3>
         <span class='desc'>${this.desc}</span>
         <h4>Skills used:</h4>
         <ul>
