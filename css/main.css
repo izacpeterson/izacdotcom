@@ -20,3 +20,25 @@
   margin-top: 100px;
   font-style: italic;
 }
+h1 {
+  font-weight: 100;
+  font-size: 64px;
+  padding-top: 64px;
+}
+@media only screen and (max-width: 600px) {
+  h1,
+  h2 {
+    text-align: center;
+  }
+  h1 {
+    font-weight: 100;
+    font-size: 32px;
+    padding-top: 64px;
+  }
+  h2 {
+    font-weight: 100;
+  }
+  .quote {
+    margin-top: 20px;
+  }
+}

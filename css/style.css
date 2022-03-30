@@ -14,16 +14,12 @@ body {
   color: white;
 }
 section {
-  height: 100vh;
+  min-height: 100vh;
+  /* padding: 10px; */
 }
 
 em {
   text-decoration: none;
   font-style: normal;
   color: #39b54a;
-}
-h1 {
-  font-weight: 100;
-  font-size: 64px;
-  padding-top: 64px;
 }

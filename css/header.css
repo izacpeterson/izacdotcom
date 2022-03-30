@@ -21,3 +21,8 @@ a {
   text-decoration: none;
   color: #39b54a;
 }
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+}
