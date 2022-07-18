@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Astro</title>
+  </head>
+
+  <body>
+    <h1>Izac Astrophotography</h1>
+    <ul id="imgList"></ul>
+  </body>
+</html>
+<script type="module">
+  import { images } from "./images/images.js";
+
+  images.forEach((image) => {
+    console.log(image.text);
+    document.querySelector("#imgList").innerHTML += `
+    <li>
+      <img src="${image.src}" alt="${image.text}">
+      <span>${image.text}  <a href="../astro/${image.src}" download>Download</a> </span>
+    </li>`;
+  });
+</script>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  img {
+    width: 50%;
+  }
+</style>
