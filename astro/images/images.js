@@ -1,5 +1,9 @@
 const images = [
   {
+    src: "./images/NorthAmericaNeb.jpg",
+    text: "North America Nebula",
+  },
+  {
     src: "./images/VeilNeb.jpg",
     text: "Veil Nebula",
   },
