@@ -1,40 +1,41 @@
 const images = [
   {
-    src: "./images/NorthAmericaNeb.png",
+    src: "NorthAmericaNeb.png",
     text: "North America Nebula",
   },
   {
-    src: "./images/VeilNeb.jpg",
+    src: "VeilNeb.jpg",
     text: "Veil Nebula",
   },
   {
-    src: "./images/ElephantTrunkNeb.jpg",
+    src: "ElephantTrunkNeb.jpg",
     text: "Elephant Trunk Nebula",
   },
   {
-    src: "./images/RosetteNeb.jpg",
+    src: "RosetteNeb.jpg",
     text: "Rosette Nebula",
   },
   {
-    src: "./images/HeartNeb.jpg",
+    src: "HeartNeb.jpg",
     text: "Heart Nebula",
   },
   {
-    src: "./images/CrescentNeb.jpg",
+    src: "CrescentNeb.jpg",
     text: "Crescent Nebula",
   },
   {
-    src: "./images/AndromedaGal.jpg",
+    src: "AndromedaGal.jpg",
     text: "Andromeda Galaxy",
   },
   {
-    src: "./images/HorseheadNeb.jpg",
+    src: "HorseheadNeb.jpg",
     text: "Horsehead Nebula",
   },
   {
-    src: "./images/OrionNeb.jpg",
+    src: "OrionNeb.jpg",
     text: "Orion Nebula",
   },
 ];
 
 export { images };
+// module.exports = { images };

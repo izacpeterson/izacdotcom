@@ -8,16 +8,19 @@
   <body>
     <h1>Izac Astrophotography</h1>
     <ul id="imgList"></ul>
+    <div class="bigImg">
+      <img src="./images/ElephantTrunkNeb.jpg" alt="" />
+    </div>
   </body>
 </html>
 <script type="module">
-  import { images } from "./images/images.js";
+  import { images } from "./images.js";
 
   images.forEach((image) => {
     console.log(image.text);
     document.querySelector("#imgList").innerHTML += `
     <li>
-      <img src="${image.src}" alt="${image.text}">
+      <img src="./thumbs/${image.src}" alt="${image.text}">
       <span>${image.text}  <a href="../astro/${image.src}" download>Download</a> </span>
     </li>`;
   });
@@ -39,7 +42,12 @@
   h1 {
     text-align: center;
   }
-
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
   li {
     list-style: none;
     display: flex;
@@ -50,7 +58,7 @@
   }
 
   img {
-    width: 50%;
+    /* width: 25%; */
   }
   @media screen and (max-width: 600px) {
     h1 {
