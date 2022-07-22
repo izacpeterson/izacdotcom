@@ -8,9 +8,7 @@
   <body>
     <h1>Izac Astrophotography</h1>
     <ul id="imgList"></ul>
-    <div class="bigImg">
-      <img src="./images/ElephantTrunkNeb.jpg" alt="" />
-    </div>
+
   </body>
 </html>
 <script type="module">
@@ -19,11 +17,19 @@
   images.forEach((image) => {
     console.log(image.text);
     document.querySelector("#imgList").innerHTML += `
-    <li>
-      <img src="./thumbs/${image.src}" alt="${image.text}">
-      <span>${image.text}  <a href="../astro/${image.src}" download>Download</a> </span>
+    <li id="${image.text}">
+      <a class='full' href="./images/${image.src}">
+        <img src="./thumbs/${image.src}" alt="${image.text}">
+      </a>
+      <span>${image.text}
+        <a href="./images/${image.src}" download>Download</a>
+      </span>
     </li>`;
   });
+
+  function toggleBigImg(){
+    document.querySelector(".bigImg").style.visibility = "visible";
+  }
 </script>
 <style>
   * {
@@ -56,10 +62,17 @@
     justify-content: center;
     padding: 20px 10px;
   }
+  .full{
+    display: flex;
+    flex-direction: column;
+  }
 
   img {
-    /* width: 25%; */
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
   }
+
   @media screen and (max-width: 600px) {
     h1 {
       font-size: 32px;
