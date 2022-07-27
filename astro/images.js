@@ -8,6 +8,10 @@ const images = [
     text: "Veil Nebula",
   },
   {
+    src: "WesternVeilNeb.png",
+    text: "Western Veil Nebula",
+  },
+  {
     src: "ElephantTrunkNeb.jpg",
     text: "Elephant Trunk Nebula",
   },
