@@ -11,12 +11,22 @@
       name="keywords"
       content="Astrophotography, astronomy, Izac Peterson, astro, photography"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Izac Astrophotography</title>
   </head>
 
-  <body>
-    <h1>Izac Astrophotography</h1>
-    <ul id="imgList"></ul>
+  <body class="bg-zinc-900 text-white">
+    <header
+      class="flex flex-col md:flex-row justify-between items-center bg-zinc-800 items-center shadow-md mb-10 p-5"
+    >
+      <span class="flex items-center">
+        <img src="../img/logo_transparent.png" alt="" class="w-24 h-24 mr-10" />
+        <h1 class="text-4xl lg:text-6xl">Izac Peterson</h1>
+      </span>
+      <h1 class="md:text-4xl">Astrophotography</h1>
+    </header>
+    <ul id="imgList" class="flex flex-wrap justify-evenly"></ul>
   </body>
 </html>
 <script type="module">
@@ -25,11 +35,11 @@
   images.forEach((image) => {
     console.log(image.text);
     document.querySelector("#imgList").innerHTML += `
-    <li id="${image.text}">
+    <li id="${image.text}" class="m-5">
       <a class='full' href="./images/${image.src}">
-        <img src="./thumbs/${image.src}" alt="${image.text}">
+        <img class="astro" src="./thumbs/${image.src}" alt="${image.text}">
       </a>
-      <span>${image.text}
+      <span class="flex justify-between">${image.text}
         <a href="./images/${image.src}" download>Download</a>
       </span>
     </li>`;
@@ -40,53 +50,9 @@
   }
 </script>
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    background-color: #000;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
-  }
-
-  h1 {
-    text-align: center;
-  }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  li {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 10px;
-  }
-  .full {
-    display: flex;
-    flex-direction: column;
-  }
-
-  img {
+  img.astro {
     width: 400px;
     height: 300px;
     object-fit: cover;
-  }
-
-  @media screen and (max-width: 600px) {
-    h1 {
-      font-size: 32px;
-    }
-    img {
-      width: 100%;
-    }
   }
 </style>

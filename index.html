@@ -2,80 +2,92 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Web Development Portfolio" />
+    <meta
+      name="keywords"
+      content="Izac, Izac Peterson, web, web developer, web development, javascript, html, css, vue, react"
+    />
 
-  <meta name="description" content="My Web Development Portfolio" />
-  <meta name="keywords"
-    content="Izac, Izac Peterson, web, web developer, web development, javascript, html, css, vue, react" />
+    <script
+      src="https://kit.fontawesome.com/53c6eecb7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <!-- <script defer src="./app.js"></script> -->
+    <link rel="icon" href="./img/favicon.ico" />
 
-  <script src="https://kit.fontawesome.com/53c6eecb7e.js" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-  <!-- <script defer src="./app.js"></script> -->
-  <link rel="icon" href="./img/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Izac Peterson</title>
+  </head>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Izac Peterson</title>
-</head>
-
-<body class="bg-gray-900 text-white">
-  <header class="flex bg-gray-800 items-center p-5 shadow-md mb-10">
-    <img src="./img/logo_transparent.png" alt="" class="w-24 h-24 mr-10" />
-    <h1 class="text-4xl lg:text-6xl">Izac Peterson</h1>
-    <!-- <ul>
+  <body class="bg-zinc-900 text-white">
+    <header class="flex bg-zinc-800 items-center p-5 shadow-md mb-10">
+      <img src="./img/logo_transparent.png" alt="" class="w-24 h-24 mr-10" />
+      <h1 class="text-4xl lg:text-6xl">Izac Peterson</h1>
+      <!-- <ul>
       <li><a href="">Home</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul> -->
-  </header>
-  <section id="main" class="">
-    <div class="flex flex-col lg:flex-row w-full items-center justify-around">
-      <a href=""
-        class="h-48 lg:h-96 w-3/4 lg:w-full flex flex-col items-center justify-center my-2 lg:mx-10 p-10 bg-gray-800 shadow-md hover:shadow-xl rounded-md">
-        <h2 class="text-2xl underline mb-2">Web Development</h2>
-        <p>
-          As a full time Web Developer, I do a lot of coding both on and off
-          the clock. Check out some of my projects here.
-        </p>
-      </a>
-      <a href=""
-        class="h-48 lg:h-96 w-3/4 lg:w-full flex flex-col items-center justify-center my-2 lg:mx-10 p-10 bg-gray-800 shadow-md rounded-md">
-        <h2 class="text-2xl underline mb-2">CGI Art</h2>
-        <p>
-          Browse some of my best CGI artwork and creations I made using
-          various software, including Blender, Vue, and Photoshop
-        </p>
-      </a>
-      <a href="/astro"
-        class="h-48 lg:h-96 w-3/4 lg:w-full flex flex-col items-center justify-center my-2 lg:mx-10 p-10 bg-gray-800 shadow-md rounded-md">
-        <h2 class="text-2xl underline mb-2">Astrophotography</h2>
-        <p>
-          Take a look at the wonders of the universe with this collection of
-          images I've taken of outer space
-        </p>
-      </a>
-    </div>
+    </header>
+    <section id="main" class="">
+      <div class="flex flex-col lg:flex-row w-full items-center justify-around">
+        <a
+          href="/dev"
+          class="h-48 lg:h-96 w-3/4 lg:w-full flex flex-col items-center justify-center my-2 lg:mx-10 p-10 bg-zinc-800 shadow-md hover:shadow-xl rounded-md"
+        >
+          <h2 class="text-2xl underline mb-2">Web Development</h2>
+          <p>
+            As a full time Web Developer, I do a lot of coding both on and off
+            the clock. Check out some of my projects here.
+          </p>
+        </a>
 
-    <div class="flex flex-col items-center">
-      <h2>Contact Me</h2>
-      <ul class="flex justify-evenly items-center w-full flex-col lg:flex-row">
-        <li>izacpeterson@gmail.com</li>
-        <li>801.855.6798</li>
-        <li><a href="">Github</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Instagram</a></li>
-      </ul>
-    </div>
+        <a
+          href="/astro"
+          class="h-48 lg:h-96 w-3/4 lg:w-full flex flex-col items-center justify-center my-2 lg:mx-10 p-10 bg-zinc-800 shadow-md rounded-md"
+        >
+          <h2 class="text-2xl underline mb-2">Astrophotography</h2>
+          <p>
+            Take a look at the wonders of the universe with this collection of
+            images I've taken of outer space
+          </p>
+        </a>
+        <a
+          href=""
+          class="h-48 lg:h-96 w-3/4 lg:w-full flex flex-col items-center justify-center my-2 lg:mx-10 p-10 bg-zinc-800 shadow-md rounded-md"
+        >
+          <h2 class="text-2xl underline mb-2">CGI Art</h2>
+          <p>
+            Browse some of my best CGI artwork and creations I made using
+            various software, including Blender, Vue, and Photoshop
+          </p>
+        </a>
+      </div>
 
-    <!-- <div class="quote w-full flex justify-center fixed bottom-10"><p class="w-1/2">"I must not fear. Fear is the mind-killer. Fear is the little-death that brings total
+      <div class="flex flex-col items-center">
+        <h2>Contact Me</h2>
+        <ul
+          class="flex justify-evenly items-center w-full flex-col lg:flex-row"
+        >
+          <li>izacpeterson@gmail.com</li>
+          <li>801.855.6798</li>
+          <li><a href="">Github</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Instagram</a></li>
+        </ul>
+      </div>
+
+      <!-- <div class="quote w-full flex justify-center fixed bottom-10"><p class="w-1/2">"I must not fear. Fear is the mind-killer. Fear is the little-death that brings total
       obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past, I
       will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will
       remain."<em>-Litany against fear</em></p></div> -->
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
