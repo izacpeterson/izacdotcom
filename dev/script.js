@@ -2,12 +2,12 @@ let projects = [
   {
     name: "Dev Flix",
     desc: "Get detailed information about movies, see what's new, like and share your favorites! Built using HTML, CSS, and JavaScript.",
-    url: "",
+    url: "https://devflix.io/",
   },
   {
     name: "Solar System",
     desc: "See a live illustration of our solar system! (not to scale). Built with HTML Canvas and JavaScript",
-    url: "",
+    url: "/sol",
   },
   {
     name: "Prime Numbers",
@@ -17,10 +17,10 @@ let projects = [
   {
     name: "ISS Locator",
     desc: "View the current location of the International Space Station. Built using HTML, Javascript and maps",
-    url: "",
+    url: "/iss",
   },
   {
-    name: "Cookbook",
+    name: "Cookbook - Coming soon",
     desc: "Save your favorites recipes, view popular recipes, and share them with your friends! Built using Vue and Tailwind.",
     url: "",
   },
