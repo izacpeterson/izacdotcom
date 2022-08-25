@@ -5,25 +5,30 @@ let projects = [
     url: "https://devflix.io/",
   },
   {
-    name: "Solar System",
-    desc: "See a live illustration of our solar system! (not to scale). Built with HTML Canvas and JavaScript",
-    url: "/sol",
+    name: "Bug Tracker",
+    desc: "(work in progress) Report, track, and manage bugs! Built using Vue.js, Node.js, and TailwindCSS.",
+    url: "https://bugs.izacpeterson.com",
   },
-  {
-    name: "Prime Numbers",
-    desc: "Generate a list of prime numbers up to a given number. Built with JavaScript and HTML.",
-    url: "",
-  },
-  {
-    name: "ISS Locator",
-    desc: "View the current location of the International Space Station. Built using HTML, Javascript and maps",
-    url: "/iss",
-  },
-  {
-    name: "Cookbook - Coming soon",
-    desc: "Save your favorites recipes, view popular recipes, and share them with your friends! Built using Vue and Tailwind.",
-    url: "",
-  },
+  // {
+  //   name: "Solar System",
+  //   desc: "See a live illustration of our solar system! (not to scale). Built with HTML Canvas and JavaScript",
+  //   url: "/sol",
+  // },
+  // {
+  //   name: "Prime Numbers",
+  //   desc: "Generate a list of prime numbers up to a given number. Built with JavaScript and HTML.",
+  //   url: "",
+  // },
+  // {
+  //   name: "ISS Locator",
+  //   desc: "View the current location of the International Space Station. Built using HTML, Javascript and maps",
+  //   url: "/iss",
+  // },
+  // {
+  //   name: "Cookbook - Coming soon",
+  //   desc: "Save your favorites recipes, view popular recipes, and share them with your friends! Built using Vue and Tailwind.",
+  //   url: "",
+  // },
   //   { name: "", desc: "", url: "" },
 ];
 
