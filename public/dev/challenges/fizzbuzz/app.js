@@ -5,6 +5,7 @@ let max = params.max;
 let fizz = 3;
 let buzz = 5;
 let output = "";
+let final = "";
 
 for (let i = 1; i <= max; i++) {
   if (i % fizz === 0 && i % buzz !== 0) {
@@ -17,7 +18,6 @@ for (let i = 1; i <= max; i++) {
     output = `${i}`;
   }
 
-  document.querySelector(
-    "#fizzbuzzList"
-  ).innerHTML += `<li class="m-5 w-10">${output}</li>`;
+  final += `<li class="m-5 w-10">${output}</li>`;
 }
+document.querySelector("#fizzbuzzList").innerHTML = final;
