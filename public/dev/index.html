@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="./script.js"></script>
-    <title>Izac Web Dev</title>
-  </head>
-  <body class="bg-zinc-900 text-white">
-    <header
-      class="flex flex-col md:flex-row justify-between items-center bg-zinc-800 items-center shadow-md mb-10 p-5"
-    >
-      <span class="flex items-center">
-        <img src="../img/logo_transparent.png" alt="" class="w-24 h-24 mr-10" />
-        <h1 class="text-4xl lg:text-6xl">Izac Peterson</h1>
-      </span>
-      <h1 class="md:text-4xl">Web Development</h1>
-    </header>
 
-    <div id="cards">
-      <h2 class="text-center text-4xl">Projects</h2>
-      <ul id="projectList" class="flex justify-evenly flex-wrap p-5"></ul>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="./script.js"></script>
+  <title>Izac Web Dev</title>
+</head>
 
-    <div id="skills">
-      <h2 class="text-center text-4xl">My Skills</h2>
-      <ul class="flex flex-row justify-evenly py-4 px-36">
-        <li>HTML</li>
-        <li>Javascript</li>
-        <li>CSS</li>
-        <li>Vue</li>
-        <li>React</li>
-        <li>Tailwind</li>
-      </ul>
-    </div>
-  </body>
+<body class="bg-zinc-900 text-white">
+  <header class="flex flex-col md:flex-row justify-between items-center bg-zinc-800 items-center shadow-md mb-10 p-5">
+    <span class="flex items-center">
+      <img src="../img/logo_transparent.png" alt="" class="w-24 h-24 mr-10" />
+      <h1 class="text-4xl lg:text-6xl">Izac Peterson</h1>
+    </span>
+    <h1 class="md:text-4xl">Web Development</h1>
+  </header>
+
+  <div id="cards">
+    <h2 class="text-center text-4xl">Projects</h2>
+    <ul id="projectList" class="flex justify-evenly flex-wrap p-5"></ul>
+  </div>
+
+  <div>
+    <h2 class="text-center text-4xl">Code Challenges</h2>
+    <ul id="challengeList" class="flex justify-evenly flex-wrap p-5"></ul>
+  </div>
+
+  <!-- <div id="skills">
+    <h2 class="text-center text-4xl">My Skills</h2>
+    <ul class="flex flex-row justify-evenly py-4 px-36">
+      <li>HTML</li>
+      <li>Javascript</li>
+      <li>CSS</li>
+      <li>Vue</li>
+      <li>React</li>
+      <li>Tailwind</li>
+    </ul>
+  </div> -->
+</body>
+
 </html>
