@@ -11,20 +11,20 @@ const projects = [
   },
 ];
 
-const challenges=[
+const challenges = [
   {
-    name:"Fizz Buzz",
-    url:"/dev/challenges/fizzbuzz",
+    name: "Fizz Buzz",
+    url: "/dev/challenges/fizzbuzz",
   },
   {
-    name:"Fibonacci",
-    url:"/challenges/fibonacci",
+    name: "Fibonacci",
+    url: "/dev/challenges/fibonacci",
   },
-  {
-    name:"Prime Numbers",
-    url:"/challenges/primes",
-  }
-]
+  // {
+  //   name: "Prime Numbers",
+  //   url: "/challenges/primes",
+  // },
+];
 
 projects.forEach((project) => {
   document.querySelector("#projectList").innerHTML += `
