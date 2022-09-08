@@ -8,7 +8,7 @@ let characterArray = [];
 
 ctx.font = "20px arial";
 
-for (let i = 0; i < 500; i++) {
+for (let i = 0; i < window.innerWidth / 10; i++) {
   characterArray.push({
     char: "",
     x: Math.floor(Math.random() * window.innerWidth),
