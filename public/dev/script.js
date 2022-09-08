@@ -20,6 +20,10 @@ const challenges = [
     name: "Fibonacci",
     url: "/dev/challenges/fibonacci",
   },
+  {
+    name: "Matrix Rain",
+    url: "/dev/challenges/matrix",
+  },
   // {
   //   name: "Prime Numbers",
   //   url: "/challenges/primes",
