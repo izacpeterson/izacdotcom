@@ -24,6 +24,10 @@ const challenges = [
     name: "Matrix Rain",
     url: "/dev/challenges/matrix",
   },
+  {
+    name: "Game of Life",
+    url: "/dev/challenges/life",
+  },
   // {
   //   name: "Prime Numbers",
   //   url: "/challenges/primes",
