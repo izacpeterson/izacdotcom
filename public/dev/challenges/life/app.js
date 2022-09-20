@@ -44,7 +44,7 @@ class Cell {
   }
   draw() {
     if (this.isAlive) {
-      ctx.fillStyle = "#DDDDDD";
+      ctx.fillStyle = "rgba(57,181,74,255)";
       ctx.fillRect(
         this.x * cellWidth,
         this.y * cellHeight,
@@ -58,7 +58,7 @@ class Cell {
   }
 }
 
-const height = window.innerWidth/15;
+const height = window.innerWidth / 15;
 const width = 50;
 let cellWidth = 10;
 let cellHeight = 10;
@@ -88,10 +88,20 @@ grid.forEach((cell) => {
 });
 
 let generations = 0;
+let background = "#000000";
+let trails = false;
+
+document.getElementById("trail").addEventListener("click", () => {
+  trails = !trails;
+  background = trails ? "rgba(0, 0, 50, 0.05" : "#000000";
+});
+
 document.getElementById("go").addEventListener("click", () => {
   setInterval(() => {
     generations++;
-    ctx.clearRect(0, 0, height * cellHeight, width * cellWidth);
+    // ctx.clearRect(0, 0, height * cellHeight, width * cellWidth);
+    ctx.fillStyle = background;
+    ctx.fillRect(0, 0, height * cellHeight, width * cellWidth);
     grid.forEach((cell) => {
       cell.checkAlive();
     });
@@ -99,6 +109,7 @@ document.getElementById("go").addEventListener("click", () => {
       cell.updateLife();
       cell.draw();
     });
+
   }, 100);
 });
 
