@@ -5,6 +5,11 @@ const projects = [
     url: "https://devflix.io/",
   },
   {
+    name: "Color Palette Builder",
+    desc: "Create, save, and share your color palettes. Built using React and Firebase",
+    url: "https://color.izacpeterson.com",
+  },
+  {
     name: "Bug Tracker",
     desc: "(work in progress) Report, track, and manage bugs! Built using Vue.js, Node.js, and TailwindCSS.",
     url: "https://bugs.izacpeterson.com",
