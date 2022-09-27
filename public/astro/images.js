@@ -45,5 +45,5 @@ const images = [
   },
 ];
 
-// export { images };
-module.exports = { images };
+export { images };
+// module.exports = { images };
