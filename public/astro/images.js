@@ -1,5 +1,9 @@
 const images = [
   {
+    src: "cyg_2.jpg",
+    text: "Cygnus Region",
+  },
+  {
     src: "NorthAmericaNeb.png",
     text: "North America Nebula",
   },
@@ -41,5 +45,5 @@ const images = [
   },
 ];
 
-export { images };
-// module.exports = { images };
+// export { images };
+module.exports = { images };
