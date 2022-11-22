@@ -9,10 +9,15 @@ const projects = [
     desc: "Create, save, and share your color palettes. Built using React and Firebase",
     url: "https://color.izacpeterson.com",
   },
+  // {
+  //   name: "Bug Tracker",
+  //   desc: "(work in progress) Report, track, and manage bugs! Built using Vue.js, Node.js, and TailwindCSS.",
+  //   url: "https://bugs.izacpeterson.com",
+  // },
   {
-    name: "Bug Tracker",
-    desc: "(work in progress) Report, track, and manage bugs! Built using Vue.js, Node.js, and TailwindCSS.",
-    url: "https://bugs.izacpeterson.com",
+    name: "Recipe Book",
+    desc: "Save and share your favorite recipes.",
+    url: "https://cookbook-769df.web.app/",
   },
 ];
 
@@ -41,7 +46,7 @@ const challenges = [
 
 projects.forEach((project) => {
   document.querySelector("#projectList").innerHTML += `
-    <a href="${project.url}" class="w-1/4 bg-zinc-800 p-5 m-5 rounded-sm shadow-md hover:shadow-lg">
+    <a href="${project.url}" class="lg:w-1/4 bg-zinc-800 p-5 m-5 rounded-sm shadow-md hover:shadow-lg">
         <h2 class="text-2xl underline mb-2">${project.name}</h2>
         <p>${project.desc}</p>
     </a>
