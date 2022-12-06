@@ -9,16 +9,16 @@ const projects = [
     desc: "Create, save, and share your color palettes. Built using React and Firebase",
     url: "https://color.izacpeterson.com",
   },
-  // {
-  //   name: "Bug Tracker",
-  //   desc: "(work in progress) Report, track, and manage bugs! Built using Vue.js, Node.js, and TailwindCSS.",
-  //   url: "https://bugs.izacpeterson.com",
-  // },
   {
-    name: "Recipe Book",
-    desc: "Save and share your favorite recipes.",
-    url: "https://cookbook-769df.web.app/",
+    name: "Bug Tracker",
+    desc: "A basic project management app. Built using Vue, Nodejs, Sqlite, TaildwindCSS",
+    url: "https://bugs.izac.app/",
   },
+  // {
+  //   name: "Recipe Book",
+  //   desc: "Save and share your favorite recipes.",
+  //   url: "https://cookbook-769df.web.app/",
+  // },
 ];
 
 const challenges = [
