@@ -60,9 +60,9 @@
   images.forEach((image) => {
     console.log(image.text);
     document.querySelector("#imgList").innerHTML += `
-    <li id="${image.text}" class="m-5">
+    <liclass="m-5">
       <a class='full' href="./images/${image.src}">
-        <img class="astro" src="./thumbs/${image.src}" alt="${image.text}">
+        <img class="astro"  id="${image.text}" src="./thumbs/${image.src}" alt="${image.text}">
       </a>
       <span class="flex justify-between">${image.text}
         <a href="./images/${image.src}" download>Download</a>
