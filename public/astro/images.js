@@ -1,5 +1,13 @@
 const images = [
   {
+    src: "orion2.png",
+    text: "Orion Nebula",
+  },
+  {
+    src: "Rosette2.jpg",
+    text: "Rosette Nebula",
+  },
+  {
     src: "cyg_2.jpg",
     text: "Cygnus Region",
   },
