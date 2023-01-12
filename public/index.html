@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta name="description" content="My Web Development Portfolio" />
-    <meta name="keywords" content="Izac, Izac Peterson, web, web developer, web development, javascript, html, css, vue, react" />
+    <meta
+      name="keywords"
+      content="Izac, Izac Peterson, web, web developer, web development, javascript, html, css, vue, react"
+    />
 
-    <script src="https://kit.fontawesome.com/53c6eecb7e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/53c6eecb7e.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <!-- <script defer src="./app.js"></script> -->
     <link rel="icon" href="./img/favicon.ico" />
@@ -16,21 +22,35 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TH0RNDEZ2P"></script>
+    <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-TH0RNDEZ2P");
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PN459L8");
     </script>
+    <!-- End Google Tag Manager -->
 
     <title>Izac Peterson</title>
   </head>
 
   <body class="bg-zinc-900 text-white">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PN459L8"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="flex bg-zinc-800 items-center p-5 shadow-md mb-10">
       <img src="./img/logo_transparent.png" alt="" class="w-24 h-24 mr-10" />
       <h1 class="text-4xl lg:text-6xl">Izac Peterson</h1>
@@ -43,14 +63,23 @@
     </header>
     <section id="main" class="">
       <div class="flex flex-col lg:flex-row w-full items-center justify-around">
-        <a href="/dev" class="h-48 lg:h-96 w-3/4 lg:w-full flex flex-col items-center justify-center my-2 lg:mx-10 p-10 bg-zinc-800 shadow-md hover:shadow-xl rounded-md">
+        <a
+          href="/dev"
+          class="h-48 lg:h-96 w-3/4 lg:w-full flex flex-col items-center justify-center my-2 lg:mx-10 p-10 bg-zinc-800 shadow-md hover:shadow-xl rounded-md"
+        >
           <h2 class="text-2xl underline mb-2">Web Development</h2>
           <p>Take a look at some of my favorite web development projects!</p>
         </a>
 
-        <a href="/astro" class="h-48 lg:h-96 w-3/4 lg:w-full flex flex-col items-center justify-center my-2 lg:mx-10 p-10 bg-zinc-800 shadow-md rounded-md">
+        <a
+          href="/astro"
+          class="h-48 lg:h-96 w-3/4 lg:w-full flex flex-col items-center justify-center my-2 lg:mx-10 p-10 bg-zinc-800 shadow-md rounded-md"
+        >
           <h2 class="text-2xl underline mb-2">Astrophotography</h2>
-          <p>Take a look at the wonders of the universe with this collection of images I've taken of outer space</p>
+          <p>
+            Take a look at the wonders of the universe with this collection of
+            images I've taken of outer space
+          </p>
         </a>
         <!-- <a href="" class="h-48 lg:h-96 w-3/4 lg:w-full flex flex-col items-center justify-center my-2 lg:mx-10 p-10 bg-zinc-800 shadow-md rounded-md">
           <h2 class="text-2xl underline mb-2">CGI Art</h2>
@@ -61,7 +90,9 @@
 
       <div class="flex flex-col items-center fixed bottom-0 w-full">
         <h2>Contact Me</h2>
-        <ul class="flex justify-evenly items-center w-full flex-col lg:flex-row">
+        <ul
+          class="flex justify-evenly items-center w-full flex-col lg:flex-row"
+        >
           <li>izacpeterson@gmail.com</li>
           <li>801.855.6798</li>
           <li><a href="https://github.com/izacpeterson">Github</a></li>
