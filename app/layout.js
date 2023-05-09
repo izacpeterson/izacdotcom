@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <main className="flex">
           <NavMenu />
-          {children}
+          <div className="pt-24 lg:pt-0 flex m-auto p-4">{children}</div>
         </main>
       </body>
     </html>
