@@ -3,7 +3,7 @@ export default function ProjectsPage() {
   return (
     <div className="flex flex-col items-center w-full">
       <h1 className="text-6xl">My Projects</h1>
-      <p>Below are some of my favorite projects I've built. Feel free to check them out!</p>
+      <p>Below are some of my favorite projects I&apos;ve built. Feel free to check them out!</p>
       <div>
         <ProjectCard title="Family Social" description="A social network for families" tags={["Next.js", "TailwindCSS", "Firebase"]} url="https://familysocial.vercel.app/" />
         <ProjectCard title="BugTracker" description="A basic project management app." tags={["Vue.js", "Node.js", "SQLite", "Express.js"]} url="https://bugs.izac.app/" />
