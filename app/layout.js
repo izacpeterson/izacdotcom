@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+import NavMenu from "./components/NavMenu";
 
 export const metadata = {
   title: "Izac Peterson",
@@ -11,7 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-zinc-900 text-zinc-100">
-      <body>{children}</body>
+      <body>
+        <main className="flex">
+          <NavMenu />
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
