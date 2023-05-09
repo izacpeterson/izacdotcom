@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-zinc-900 text-zinc-100">
       <body>
-        <main className="flex">
+        <main className="flex min-h-screen">
           <NavMenu />
           <div className="pt-24 lg:pt-0 flex m-auto p-4">{children}</div>
         </main>

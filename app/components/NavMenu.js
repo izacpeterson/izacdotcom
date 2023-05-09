@@ -53,10 +53,10 @@ export default function NavMenu() {
       {/* Overlay */}
       <div className={`${isOpen ? "block" : "hidden"} fixed top-0 left-0 w-screen h-screen bg-black opacity-90 z-30`} onClick={toggleDrawer} />
 
-      <div id="desktop" className="hidden lg:flex flex-col items-center h-screen shadow-xl bg-zinc-800">
+      <div id="desktop" className="hidden lg:flex flex-col items-start h-full shadow-xl bg-zinc-800">
         <img src="logo.png" className="w-24 p-4" />
-        <span className="text-center text-5xl text-primary font-bold p-4">Izac</span>
-        <nav className="flex flex-col h-full justify-center">
+        <span className="text-center text-5xl  font-bold p-4">Izac</span>
+        <nav className="flex flex-col h-full justify-start pt-10">
           {linkList.map((link) => (
             <Link href={link.href} key={link.href} className={`p-4 hover:text-primary transition-all duration-300 ${pathname === link.href ? "text-primary" : ""}`}>
               {link.text}
