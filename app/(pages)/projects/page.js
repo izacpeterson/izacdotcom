@@ -5,7 +5,7 @@ export default function ProjectsPage() {
     {
       title: "Twutter - W.I.P.",
       description: "A simple but functional twitter clone",
-      tags: ["Next.js", "Prisma", "PlanetScale", "TailwindCSS", "Auth.js"],
+      tags: ["Next.js", "Prisma", "PlanetScale", "TypeScript", "Auth.js"],
       url: "https://twutter.izac.app/",
     },
     {
