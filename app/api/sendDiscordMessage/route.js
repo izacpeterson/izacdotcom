@@ -20,7 +20,7 @@ export async function GET(request) {
   };
 
   const data = {
-    content: `**${date}**\n${message}\n\n**Location:** ${locationDetails.city}, ${locationDetails.region}, ${locationDetails.country}`,
+    content: `**${message}**\n\n**Location:** ${locationDetails.city}, ${locationDetails.region}, ${locationDetails.country}`,
   };
 
   const options = {
