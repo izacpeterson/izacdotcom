@@ -1,4 +1,7 @@
+"use client";
 import Link from "next/link";
+
+fetch(`https://www.izacpeterson.com/api/sendDiscordMessage?message=New Visitor on izacpeterson.com`);
 
 export default function Home() {
   return (

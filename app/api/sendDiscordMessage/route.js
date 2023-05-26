@@ -33,5 +33,12 @@ export async function GET(request) {
 
   fetch(url, options);
 
-  return NextResponse.json({ message: "message sent" });
+  return new Response("Message Sent!", {
+    status: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    },
+  });
 }
