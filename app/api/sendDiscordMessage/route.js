@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 const url = "https://discordapp.com/api/webhooks/770724245214986261/qQTsNZsFXoiRopoc6EB3p0Ixt7427RkLd-BB_Cf4xKcWoOhFmvV1__2wJu590gkEAwmz";
 
 export async function GET(request) {
-  console.log(request.headers);
+  console.log(request.ip);
   console.log(request.headers.get("x-forwarded-for").split(":")[3]);
   const { searchParams } = new URL(request.url);
   const message = searchParams.get("message");
@@ -28,7 +28,7 @@ export async function GET(request) {
 
   fetch(url, options);
 
-  return NextResponse.json(options);
+  return NextResponse.json(request.ip);
 }
 
 function getIP(obj) {}
