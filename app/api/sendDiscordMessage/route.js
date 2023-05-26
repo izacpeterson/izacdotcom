@@ -28,7 +28,7 @@ export async function GET(request) {
 
   fetch(url, options);
 
-  return NextResponse.json(request.ip);
+  return NextResponse.json({ ip: request.ip });
 }
 
 function getIP(obj) {}
