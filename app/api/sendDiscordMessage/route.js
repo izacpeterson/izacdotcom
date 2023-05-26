@@ -7,8 +7,20 @@ export async function GET(request) {
   const message = searchParams.get("message");
   const date = new Date().toLocaleString();
 
+  const clientIPs = [request.headers.get("cf-connecting-ip"), request.headers.get("x-forwarded-for"), request.headers.get("x-real-ip")];
+  let clientIP = clientIPs[2];
+
+  let ipLocation = await fetch(`https://ipapi.co/${clientIP}/json/`);
+  ipLocation = await ipLocation.json();
+
+  let locationDetails = {
+    city: ipLocation.city,
+    region: ipLocation.region,
+    country: ipLocation.country_name,
+  };
+
   const data = {
-    content: `**${date}**\n${message}`,
+    content: `**${date}**\n${message}\n\n**Location:** ${locationDetails.city}, ${locationDetails.region}, ${locationDetails.country}`,
   };
 
   const options = {
@@ -21,14 +33,5 @@ export async function GET(request) {
 
   fetch(url, options);
 
-  const clientIPs = [request.headers.get("cf-connecting-ip"), request.headers.get("x-forwarded-for"), request.headers.get("x-real-ip")];
-  let clientIP = clientIPs[2];
-
-  let ipLocation = await fetch(`https://ipapi.co/${clientIP}/json/`);
-  ipLocation = await ipLocation.json();
-
-  // get
-  console.log(clientIPs);
-
-  return NextResponse.json({ message: ipLocation });
+  return NextResponse.json({ message: "message sent" });
 }
