@@ -22,7 +22,12 @@ export async function GET(request) {
   fetch(url, options);
 
   const clientIPs = [request.headers.get("cf-connecting-ip"), request.headers.get("x-forwarded-for"), request.headers.get("x-real-ip")];
+  let clientIP = clientIPs[2];
+
+  let ipLocation = await fetch(`https://ipapi.co/${clientIP}/json/`);
+
+  // get
   console.log(clientIPs);
 
-  return NextResponse.json({ message: clientIPs });
+  return NextResponse.json({ message: ipLocation });
 }
