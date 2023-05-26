@@ -25,6 +25,7 @@ export async function GET(request) {
   let clientIP = clientIPs[2];
 
   let ipLocation = await fetch(`https://ipapi.co/${clientIP}/json/`);
+  ipLocation = await ipLocation.json();
 
   // get
   console.log(clientIPs);
