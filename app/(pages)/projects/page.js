@@ -2,12 +2,12 @@ import ProjectCard from "@/app/components/ProjectCard";
 
 export default function ProjectsPage() {
   const projects = [
-    {
-      title: "Twutter - W.I.P.",
-      description: "A simple but functional twitter clone",
-      tags: ["Next.js", "Prisma", "PlanetScale", "TypeScript", "Auth.js"],
-      url: "https://twutter.izac.app/",
-    },
+    // {
+    //   title: "Twutter - W.I.P.",
+    //   description: "A simple but functional twitter clone",
+    //   tags: ["Next.js", "Prisma", "PlanetScale", "TypeScript", "Auth.js"],
+    //   url: "https://twutter.izac.app/",
+    // },
     {
       title: "BugTracker",
       description: "A basic project management app.",
@@ -26,12 +26,12 @@ export default function ProjectsPage() {
       tags: ["HTML", "CSS", "JavaScript", "Firebase"],
       url: "https://devflix.io",
     },
-    {
-      title: "Family Social",
-      description: "A social network for families",
-      tags: ["Next.js", "TailwindCSS", "Firebase"],
-      url: "https://familysocial.vercel.app/",
-    },
+    // {
+    //   title: "Family Social",
+    //   description: "A social network for families",
+    //   tags: ["Next.js", "TailwindCSS", "Firebase"],
+    //   url: "https://familysocial.vercel.app/",
+    // },
     {
       title: "Color Palette Builder",
       description: "Generate beautiful color palettes",
