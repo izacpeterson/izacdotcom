@@ -1,5 +1,3 @@
-import "./style.css";
-
 var body = document.body,
   html = document.documentElement;
 
