@@ -3,6 +3,7 @@ let shipImage;
 let ship;
 let ufos = [];
 let bullets = [];
+let stars = [];
 
 let maxHeight = 5000;
 
@@ -20,6 +21,10 @@ function setup() {
 
   for (let i = 0; i < 5; i++) {
     ufos.push(new UFO(ufoImage));
+  }
+
+  for (let i = 0; i < 1000; i++) {
+    stars.push(new Star(random(windowWidth), random(maxHeight), random(0.1, 2)));
   }
 }
 
@@ -78,8 +83,8 @@ class UFO {
     this.y = lerp(this.y, this.targetY, this.movementSpeed);
 
     if (random(1) < 0.01) {
-      this.targetX = ship.x + random(500) - 250;
-      this.targetY = ship.y + random(500) - 250;
+      this.targetX = ship.x + random(1000) - 500;
+      this.targetY = ship.y + random(1000) - 500;
     }
   }
 }
@@ -103,6 +108,23 @@ class Bullet {
 
     line(this.x, this.y, this.x + cos(this.direction) * 50, this.y + sin(this.direction) * 50);
 
+    pop();
+  }
+}
+
+class Star {
+  constructor(x, y, size) {
+    this.x = x;
+    this.y = y;
+    this.size = size;
+  }
+  display() {
+    this.y += this.size;
+    if (this.y > maxHeight) this.y = 0;
+    push();
+    stroke(255);
+    strokeWeight(this.size);
+    point(this.x, this.y);
     pop();
   }
 }
@@ -157,6 +179,11 @@ function draw() {
     if (bullets[i].x < 0 || bullets[i].x > windowWidth || bullets[i].y < 0 || bullets[i].y > maxHeight) {
       bullets.splice(i, 1);
     }
+  }
+
+  for (let i = 0; i < stars.length; i++) {
+    let star = stars[i];
+    star.display();
   }
 }
 
