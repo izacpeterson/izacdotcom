@@ -34,6 +34,9 @@ function setup() {
     return; // Prevents the rest of the setup function from running
   }
 
+  noLoop();
+  return;
+
   createCanvas(windowWidth, 4000);
   noSmooth();
   ship = new Ship(windowWidth / 2, 900, shipImage);
