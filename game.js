@@ -9,6 +9,16 @@ let maxHeight = 4000;
 
 let score = 0;
 
+let screenWidth = window.innerWidth;
+
+let maxStars = 0;
+
+if (screenWidth < 500) {
+  maxStars = 100;
+} else if (screenWidth < 1000) {
+  maxStars = 1000;
+}
+
 function preload() {
   shipImage = loadImage("images/ship.png");
   ufoImage = loadImage("images/ufo.png");
@@ -23,7 +33,7 @@ function setup() {
     ufos.push(new UFO(ufoImage));
   }
 
-  for (let i = 0; i < 1000; i++) {
+  for (let i = 0; i < maxStars; i++) {
     stars.push(new Star(random(windowWidth), random(maxHeight), random(0.1, 2)));
   }
 }
