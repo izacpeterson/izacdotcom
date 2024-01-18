@@ -11,13 +11,7 @@ let score = 0;
 
 let screenWidth = window.innerWidth;
 
-let maxStars = 0;
-
-if (screenWidth < 500) {
-  maxStars = 0;
-} else if (screenWidth < 1000) {
-  maxStars = 1000;
-}
+let maxStars = 1000;
 
 function preload() {
   shipImage = loadImage("images/ship.png");
@@ -33,9 +27,6 @@ function setup() {
     noLoop(); // Stops draw loop
     return; // Prevents the rest of the setup function from running
   }
-
-  noLoop();
-  return;
 
   createCanvas(windowWidth, 4000);
   noSmooth();
