@@ -24,7 +24,16 @@ function preload() {
   ufoImage = loadImage("images/ufo.png");
 }
 
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
 function setup() {
+  if (isMobileDevice()) {
+    noLoop(); // Stops draw loop
+    return; // Prevents the rest of the setup function from running
+  }
+
   createCanvas(windowWidth, 4000);
   noSmooth();
   ship = new Ship(windowWidth / 2, 900, shipImage);
