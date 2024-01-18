@@ -9,7 +9,7 @@
   z-index: -1;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .no_selection {
   user-select: none; /* standard syntax */

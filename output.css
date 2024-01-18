@@ -614,6 +614,10 @@ video {
   right: 2.5rem;
 }
 
+.m-8 {
+  margin: 2rem;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -642,10 +646,6 @@ video {
   display: grid;
 }
 
-.\!grid {
-  display: grid !important;
-}
-
 .contents {
   display: contents;
 }
@@ -664,6 +664,10 @@ video {
 
 .w-1\/4 {
   width: 25%;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .grow {
@@ -831,7 +835,7 @@ video {
   z-index: -1;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .no_selection {
