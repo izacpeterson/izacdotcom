@@ -5,7 +5,7 @@ let ufos = [];
 let bullets = [];
 let stars = [];
 
-let maxHeight = 5000;
+let maxHeight = 4000;
 
 let score = 0;
 
@@ -15,7 +15,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, 5000);
+  createCanvas(windowWidth, 4000);
   noSmooth();
   ship = new Ship(windowWidth / 2, 900, shipImage);
 
