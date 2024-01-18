@@ -14,7 +14,7 @@ let screenWidth = window.innerWidth;
 let maxStars = 0;
 
 if (screenWidth < 500) {
-  maxStars = 100;
+  maxStars = 0;
 } else if (screenWidth < 1000) {
   maxStars = 1000;
 }
