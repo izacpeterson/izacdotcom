@@ -140,6 +140,7 @@ class Star {
 }
 
 function draw() {
+  if (windowWidth < 500) return;
   frameRate(60);
   //   background("#181825");
   clear();
