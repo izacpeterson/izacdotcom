@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Izac Peterson — systems engineer. Integration platforms, job queues, AWS infrastructure, and the deploy pipeline."
+    />
+    <meta property="og:title" content="Izac Peterson" />
+    <meta
+      property="og:description"
+      content="Systems engineer. Integration platforms, queues, and the infrastructure underneath them."
+    />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="/output.css" />
     <script src="p5.js"></script>
     <script src="game.js"></script>
@@ -12,300 +22,260 @@
   <body
     class="bg-slate-950 overflow-x-hidden font-mono [text-shadow:_0_0px_10px_rgb(0_0_0_/_1000%)]"
   >
+    <a
+      href="#about"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-green-500 focus:text-black focus:p-2 focus:rounded"
+      >Skip to content</a
+    >
+
     <div class="flex items-center justify-evenly">
       <nav
         class="text-green-500 flex justify-between underline font-bold text-xl w-full lg:w-1/2 p-4"
       >
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" class="hover:text-green-300 transition-colors"
+          >About</a
+        >
+        <a href="#projects" class="hover:text-green-300 transition-colors"
+          >Projects</a
+        >
+        <a href="#contact" class="hover:text-green-300 transition-colors"
+          >Contact</a
+        >
       </nav>
     </div>
+
     <div class="flex-col flex items-center justify-center">
-      <div class="text-white py-80 lg:p-96 flex flex-col">
-        <span class="text-4xl"
+      <!-- hero -->
+      <div class="text-white py-48 lg:py-72 px-4 flex flex-col max-w-3xl">
+        <span class="text-4xl lg:text-5xl"
           >Hello, I'm <span class="text-green-500">Izac</span></span
         >
-        <span>Web Developer, Astronomer, and Artist</span>
+        <span class="mt-3 text-lg lg:text-xl"
+          >Software Engineer, Astronomer, and Artist</span
+        >
       </div>
 
-      <div id="about" class="flex flex-col items-center">
+      <!-- about -->
+      <div id="about" class="flex flex-col items-center w-full px-4">
         <h2 class="text-4xl text-white">About</h2>
         <div
-          class="text-white flex flex-col lg:flex-row justify-evenly items-center lg:p-40"
+          class="text-white flex flex-col lg:flex-row justify-evenly items-start gap-12 lg:gap-8 w-full max-w-6xl pt-10 lg:py-24"
         >
-          <div class="lg:w-1/3 pb-20 lg:pb-0">
-            <p class="p-4">
-              As a lifelong learner and enthusiast for all things web
-              development, I am a full stack developer deeply passionate about
-              JavaScript and the dynamic world of web technologies. My drive in
-              this field comes from the unique blend of creativity, logic, and
-              technological innovation, coupled with the continuous journey of
-              learning and discovery. When I'm not immersed in coding, I'm often
-              exploring the wonders of astronomy or expressing creativity
-              through art. This combination of technical skill, celestial
-              curiosity, and artistic expression informs my approach to crafting
-              engaging and effective web solutions.
+          <div class="lg:w-5/12">
+            <p class="leading-relaxed">
+              Full stack engineer. I build the whole thing: the interface, the
+              services behind it, the database underneath, and the
+              infrastructure it all runs on.
+            </p>
+            <p class="leading-relaxed mt-4">
+              Most of my work lives in the parts that span layers. Deploy
+              pipelines. Queue systems. Integrations between two platforms that
+              disagree with each other. The internal tools a company runs on
+              every day without thinking about them.
+            </p>
+            <p class="leading-relaxed mt-4">
+              Before this I taught web development at a technical college, and
+              was a frontend developer at BladeHQ
+            </p>
+            <p class="leading-relaxed mt-4 text-slate-400">
+              Outside of work: astrophotography, and side projects that got out
+              of hand.
             </p>
           </div>
-          <div class="flex flex-col items-center justify-center">
-            <h2 class="text-4xl">Skills</h2>
-            <div class="flex items-center">
-              <div class="m-8 w-16 lg:w-24 tooltip">
-                <img src="images/js.png" alt="JavaScript" />
-                <span class="tooltiptext">JavaScript</span>
-              </div>
-              <div class="m-8 w-16 lg:w-24 tooltip">
-                <img src="images/html.png" alt="HTML" />
-                <span class="tooltiptext">HTML</span>
-              </div>
-              <div class="m-8 w-16 lg:w-24 tooltip">
-                <img src="images/css.png" alt="CSS" />
-                <span class="tooltiptext">CSS</span>
-              </div>
-            </div>
 
-            <div class="flex items-center">
-              <div class="m-8 w-16 lg:w-24 tooltip">
-                <img src="images/tailwind.svg" alt="Tailwind" />
-                <span class="tooltiptext">Tailwind</span>
+          <!-- stack readout -->
+          <div class="lg:w-6/12 w-full">
+            <div
+              class="border border-slate-800 rounded-lg bg-slate-900/40 overflow-hidden"
+            >
+              <div
+                class="flex items-center gap-2 px-4 py-2 border-b border-slate-800"
+              >
+                <span class="w-3 h-3 rounded-full bg-slate-700"></span>
+                <span class="w-3 h-3 rounded-full bg-slate-700"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                <span class="ml-2 text-xs text-slate-500">~/stack</span>
               </div>
-              <div class="m-8 w-16 lg:w-24 tooltip">
-                <img
-                  src="images/sass.png"
-                  alt="Syntactically Awesome Style Sheets"
-                />
-                <span class="tooltiptext"
-                  >Syntactically Awesome Style Sheets</span
-                >
-              </div>
-            </div>
 
-            <div class="flex items-center">
-              <div class="m-8 w-16 lg:w-24 tooltip">
-                <img src="images/svelte.png" alt="Svelte" />
-                <span class="tooltiptext">Svelte</span>
-              </div>
-              <div class="m-8 w-16 lg:w-24 tooltip">
-                <img src="images/vue.png" alt="Vue" />
-                <span class="tooltiptext">Vue</span>
-              </div>
-              <div class="m-8 w-16 lg:w-24 tooltip">
-                <img src="images/react.png" alt="React" />
-                <span class="tooltiptext">React</span>
+              <div class="p-4 text-sm overflow-x-auto">
+                <p class="text-slate-500">
+                  <span class="text-green-500">$</span> cat stack.txt
+                </p>
+
+                <dl class="mt-3 space-y-2">
+                  <div class="flex flex-col sm:flex-row sm:gap-3">
+                    <dt class="text-green-500 sm:w-36 shrink-0">languages</dt>
+                    <dd class="text-slate-300">
+                      JavaScript · TypeScript · SQL · Bash · Python
+                    </dd>
+                  </div>
+                  <div class="flex flex-col sm:flex-row sm:gap-3">
+                    <dt class="text-green-500 sm:w-36 shrink-0">backend</dt>
+                    <dd class="text-slate-300">
+                      Node.js · Express · Bun · REST · webhooks
+                    </dd>
+                  </div>
+                  <div class="flex flex-col sm:flex-row sm:gap-3">
+                    <dt class="text-green-500 sm:w-36 shrink-0">queues</dt>
+                    <dd class="text-slate-300">
+                      BullMQ · Redis · workers · retries · rate limiting
+                    </dd>
+                  </div>
+                  <div class="flex flex-col sm:flex-row sm:gap-3">
+                    <dt class="text-green-500 sm:w-36 shrink-0">data</dt>
+                    <dd class="text-slate-300">
+                      PostgreSQL · MongoDB · SQLite
+                    </dd>
+                  </div>
+                  <div class="flex flex-col sm:flex-row sm:gap-3">
+                    <dt class="text-green-500 sm:w-36 shrink-0">cloud</dt>
+                    <dd class="text-slate-300">
+                      AWS · Terraform · Ansible · Docker · Nginx · Linux
+                    </dd>
+                  </div>
+                  <div class="flex flex-col sm:flex-row sm:gap-3">
+                    <dt class="text-green-500 sm:w-36 shrink-0">delivery</dt>
+                    <dd class="text-slate-300">
+                      CircleCI · OIDC · Grafana · Loki · Promtail
+                    </dd>
+                  </div>
+                  <div class="flex flex-col sm:flex-row sm:gap-3">
+                    <dt class="text-green-500 sm:w-36 shrink-0">frontend</dt>
+                    <dd class="text-slate-300">
+                      SvelteKit · React · Vue · Next.js · Tailwind
+                    </dd>
+                  </div>
+                  <div class="flex flex-col sm:flex-row sm:gap-3">
+                    <dt class="text-green-500 sm:w-36 shrink-0">security</dt>
+                    <dd class="text-slate-300">
+                      OAuth 2.0 · OIDC · JWT · HMAC · least-privilege IAM
+                    </dd>
+                  </div>
+                </dl>
+
+                <p class="mt-4 text-slate-500">
+                  <span class="text-green-500">$</span>
+                  <span class="animate-pulse">_</span>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- projects -->
       <section
         id="projects"
-        class="flex flex-col items-center text-white pt-10 px-4"
+        class="flex flex-col items-center text-white pt-20 px-4 w-full"
       >
         <h2 class="text-4xl text-white">Projects</h2>
-        <p>
-          Below are some of my favorite projects I've built, feel free to check
-          them out!
+        <p class="mt-2 text-slate-400 text-center">
+          Things I built because I wanted them to exist. Poke around.
         </p>
-        <div class="flex flex-col">
-          <!-- <a href="https://devflix.io" target="_blank">
-            <div class="p-4 my-4 lg:m-12 border border-white rounded-lg w-full">
-              <h3 class="text-4xl m-2">Devflix</h3>
-              <p class="m-2">
-                Search, discover, and learn more about your favorite movies.
-              </p>
-              <ul class="flex flex-wrap">
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  HTML
-                </li>
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  CSS
-                </li>
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  JavaScript
-                </li>
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  Firebase
-                </li>
-              </ul>
-            </div>
-          </a> -->
 
-          <a href="https://mantledb.sh" target="_blank">
-            <div class="p-4 my-4 lg:m-12 border border-white rounded-lg w-full">
-              <h3 class="text-4xl m-2">MantleDB</h3>
-              <p class="m-2">
-                An anonymous JSON storage solutions for side projects,
-                hackathongs, and more.
+        <div class="flex flex-col w-full max-w-3xl">
+          <a href="https://mantledb.sh" target="_blank" rel="noopener">
+            <div
+              class="p-6 my-4 lg:my-6 border border-slate-700 hover:border-green-500 transition-colors rounded-lg w-full"
+            >
+              <h3 class="text-3xl lg:text-4xl">MantleDB</h3>
+              <p class="mt-2">
+                Anonymous JSON storage for side projects, hackathons, and
+                anything else that does not deserve a database yet. No accounts,
+                no schemas, no setup.
               </p>
-              <ul class="flex flex-wrap">
+              <p class="mt-2 text-slate-400 text-sm">
+                Namespace claiming, atomic increments, merge patches, TTL
+                expiry, version history with rollback, and an MCP server so AI
+                assistants can use it directly.
+              </p>
+              <ul class="flex flex-wrap mt-3">
                 <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
+                  class="px-3 py-1 mr-2 mt-2 flex items-center bg-green-500 rounded-full text-black text-sm"
                 >
-                  NodeJS
+                  Node.js
                 </li>
                 <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
+                  class="px-3 py-1 mr-2 mt-2 flex items-center bg-green-500 rounded-full text-black text-sm"
                 >
                   SQLite
                 </li>
                 <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
+                  class="px-3 py-1 mr-2 mt-2 flex items-center bg-green-500 rounded-full text-black text-sm"
                 >
-                  ExpressJS
+                  Express
+                </li>
+                <li
+                  class="px-3 py-1 mr-2 mt-2 flex items-center bg-green-500 rounded-full text-black text-sm"
+                >
+                  MCP
                 </li>
               </ul>
             </div>
           </a>
 
-          <a href="https://darkestskies.com" target="_blank">
-            <div class="p-4 my-4 lg:m-12 border border-white rounded-lg w-full">
-              <h3 class="text-4xl m-2">Darkest Skies</h3>
-              <p class="m-2">
-                Dark Sky forecasting for Astronomy and Astrophotography
+          <a href="https://secretsandstuff.com/" target="_blank" rel="noopener">
+            <div
+              class="p-6 my-4 lg:my-6 border border-slate-700 hover:border-green-500 transition-colors rounded-lg w-full"
+            >
+              <h3 class="text-3xl lg:text-4xl">Secrets and Stuff</h3>
+              <p class="mt-2">
+                Somewhere to put the things that don't belong in a repo.
               </p>
-              <ul class="flex flex-wrap">
+              <p class="mt-2 text-slate-400 text-sm">
+                Deploy scripts, .env files, API keys, the runbook nobody wrote
+                down. Encrypted before storage, shared with exactly who you
+                choose.
+              </p>
+              <ul class="flex flex-wrap mt-3">
                 <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
+                  class="px-3 py-1 mr-2 mt-2 flex items-center bg-green-500 rounded-full text-black text-sm"
                 >
-                  NodeJS
+                  Node.js
                 </li>
                 <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
+                  class="px-3 py-1 mr-2 mt-2 flex items-center bg-green-500 rounded-full text-black text-sm"
                 >
-                  Meteosource Weather API
+                  SvelteKit
                 </li>
                 <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
+                  class="px-3 py-1 mr-2 mt-2 flex items-center bg-green-500 rounded-full text-black text-sm"
+                >
+                  Encryption
+                </li>
+              </ul>
+            </div>
+          </a>
+
+          <!-- <a href="https://darkestskies.com" target="_blank" rel="noopener">
+            <div
+              class="p-6 my-4 lg:my-6 border border-slate-700 hover:border-green-500 transition-colors rounded-lg w-full"
+            >
+              <h3 class="text-3xl lg:text-4xl">Darkest Skies</h3>
+              <p class="mt-2">
+                Dark sky forecasting for astronomy and astrophotography.
+              </p>
+              <p class="mt-2 text-slate-400 text-sm">
+                Cloud cover, moon phase and atmospheric seeing, combined into an
+                answer to the only question that matters: is tonight worth
+                driving for? Built because the existing tools kept telling me it
+                was.
+              </p>
+              <ul class="flex flex-wrap mt-3">
+                <li
+                  class="px-3 py-1 mr-2 mt-2 flex items-center bg-green-500 rounded-full text-black text-sm"
+                >
+                  Node.js
+                </li>
+                <li
+                  class="px-3 py-1 mr-2 mt-2 flex items-center bg-green-500 rounded-full text-black text-sm"
                 >
                   Fastify
                 </li>
-              </ul>
-            </div>
-          </a>
-
-          <!-- <a href="https://nexussocial.netlify.app/" target="_blank">
-            <div class="p-4 my-4 lg:m-12 border border-white rounded-lg w-full">
-              <h3 class="text-4xl m-2">Nexus</h3>
-              <p class="m-2">A simple but functional social media site</p>
-              <ul class="flex flex-wrap">
-                <li class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black">SvelteKit</li>
-                <li class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black">TailwindCSS</li>
-                <li class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black">Firebase</li>
-              </ul>
-            </div>
-          </a> -->
-
-          <!-- <a href="https://chat.izac.app/" target="_blank">
-            <div class="p-4 my-4 lg:m-12 border border-white rounded-lg w-full">
-              <h3 class="text-4xl m-2">CoolBot</h3>
-              <p class="m-2">An OpenAI ChatGPT powered chat app, but way "cooler"</p>
-              <ul class="flex flex-wrap">
-                <li class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black">OpenAI/ChatGPT</li>
-                <li class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black">SvelteKit</li>
-                <li class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black">TailwindCSS/DaisyUI</li>
-              </ul>
-            </div>
-          </a> -->
-
-          <!-- <a href="https://color.izacpeterson.com/" target="_blank">
-            <div class="p-4 my-4 lg:m-12 border border-white rounded-lg w-full">
-              <h3 class="text-4xl m-2">Color Palette Builder</h3>
-              <p class="m-2">
-                Generate, save, and share beautiful color palettes
-              </p>
-              <ul class="flex flex-wrap">
                 <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
+                  class="px-3 py-1 mr-2 mt-2 flex items-center bg-green-500 rounded-full text-black text-sm"
                 >
-                  React
-                </li>
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  Bootstrap
-                </li>
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  Firebase
-                </li>
-              </ul>
-            </div>
-          </a> -->
-
-          <!-- <a href="https://izacpeterson.github.io/solSystem/" target="_blank">
-            <div class="p-4 my-4 lg:m-12 border border-white rounded-lg w-full">
-              <h3 class="text-4xl m-2">Solar System View</h3>
-              <p class="m-2">
-                A stylized view of of the realtime positions of all the planets
-                in our solar system
-              </p>
-              <ul class="flex flex-wrap">
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  HTML Canvas
-                </li>
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  JavaScript
-                </li>
-              </ul>
-            </div>
-          </a> -->
-
-          <!-- <a href="https://astro.izac.app/" target="_blank">
-            <div class="p-4 my-4 lg:m-12 border border-white rounded-lg w-full">
-              <h3 class="text-4xl m-2">Astrophotography</h3>
-              <p class="m-2">
-                A collection of pictures I've taken of galaxies and nebulae
-              </p>
-              <ul class="flex flex-wrap">
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  HTML Canvas
-                </li>
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  JavaScript
-                </li>
-              </ul>
-            </div>
-          </a> -->
-
-          <!-- <a
-            href="https://github.com/izacpeterson/password-to-image"
-            target="_blank"
-          >
-            <div class="p-4 my-4 lg:m-12 border border-white rounded-lg w-full">
-              <h3 class="text-4xl m-2">Password To Image</h3>
-              <p class="m-2">
-                A password manager, that encrypts and saves all your passwords
-                in a PNG image
-              </p>
-              <ul class="flex flex-wrap">
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  GO
-                </li>
-                <li
-                  class="p-2 m-2 h-6 flex items-center bg-green-500 rounded-full text-black"
-                >
-                  Encryption
+                  Weather API
                 </li>
               </ul>
             </div>
@@ -313,22 +283,46 @@
         </div>
       </section>
 
+      <!-- contact -->
       <div
         id="contact"
-        class="flex flex-col items-center justify-center h-screen text-white lg:w-1/2 m-auto px-4"
+        class="flex flex-col items-center justify-center min-h-screen py-20 text-white lg:w-1/2 m-auto px-4"
       >
         <h2 class="text-4xl text-white">Contact Me</h2>
-        <p>Feel free to fill out the form below, text, or email me!</p>
+        <p class="mt-2 text-center text-slate-400">
+          Fill out the form, text me, or send an email. All three reach me.
+        </p>
 
-        <div class="py-4">
+        <div class="py-4 flex flex-col sm:flex-row gap-2 sm:gap-6 text-sm">
           <span>Phone: 801-855-6798</span>
           <span>Email: izacpeterson@gmail.com</span>
         </div>
 
-        <form class="w-full" netlify>
+        <!-- Netlify needs the form to be named, to be opted in with
+             data-netlify, and to carry a matching hidden form-name field.
+             Without all three the submission is accepted by the browser and
+             then quietly dropped. -->
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="w-full"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>Leave this empty: <input name="bot-field" /></label>
+          </p>
+
           <div class="flex flex-col mt-4">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" class="bg-slate-900 p-2" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              class="bg-slate-900 border border-slate-800 focus:border-green-500 focus:outline-none p-2"
+            />
           </div>
           <div class="flex flex-col mt-4">
             <label for="email">Email</label>
@@ -336,7 +330,8 @@
               type="email"
               name="email"
               id="email"
-              class="bg-slate-900 p-2"
+              required
+              class="bg-slate-900 border border-slate-800 focus:border-green-500 focus:outline-none p-2"
             />
           </div>
           <div class="flex flex-col mt-4">
@@ -345,12 +340,16 @@
               name="message"
               id="message"
               cols="30"
-              rows="10"
-              class="bg-slate-900 p-2"
+              rows="8"
+              required
+              class="bg-slate-900 border border-slate-800 focus:border-green-500 focus:outline-none p-2"
             ></textarea>
           </div>
-          <button type="submit" class="mt-4 p-2 bg-green-500 rounded-lg">
-            Submit
+          <button
+            type="submit"
+            class="mt-4 px-4 py-2 bg-green-500 hover:bg-green-400 transition-colors rounded-lg text-black font-bold"
+          >
+            Send it
           </button>
         </form>
       </div>
@@ -377,7 +376,8 @@
 
         <div class="hidden lg:flex flex-col items-end">
           <p class="text-[10px] text-slate-500 mt-1">
-            Built with Svelte & Tailwind
+            Built with Tailwind, vanilla JS, and a p5 sketch that is keeping
+            score
           </p>
         </div>
       </div>
